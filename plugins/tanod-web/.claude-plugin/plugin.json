@@ -1,0 +1,17 @@
+{
+  "name": "tanod-web",
+  "version": "1.0.0",
+  "description": "Web tools: search, page to Markdown or screenshot, metadata, links, sitemaps, robots, RDAP, IP.",
+  "author": {
+    "name": "Tanod",
+    "url": "https://tanod.dev"
+  },
+  "homepage": "https://tanod.dev/mcp-servers/",
+  "repository": "https://github.com/tanod-labs/tanod-mcp",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "tanod",
+    "web"
+  ]
+}

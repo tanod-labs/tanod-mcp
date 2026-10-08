@@ -1,0 +1,17 @@
+{
+  "name": "tanod-docs",
+  "version": "1.0.0",
+  "description": "PDF toolkit: extract text, OCR, merge, split, rotate, compress, watermark, protect, HTML to PDF.",
+  "author": {
+    "name": "Tanod",
+    "url": "https://tanod.dev"
+  },
+  "homepage": "https://tanod.dev/mcp-servers/",
+  "repository": "https://github.com/tanod-labs/tanod-mcp",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "tanod",
+    "docs"
+  ]
+}

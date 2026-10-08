@@ -1,0 +1,17 @@
+{
+  "name": "tanod",
+  "version": "1.0.0",
+  "description": "All 120+ Tanod tools in one server: security checks, chain data, aviation and space, finance, PDF and image toolkits, text, utilities, web and local ML. Pay per call in USDC over x402, or free daily allowance; no API key.",
+  "author": {
+    "name": "Tanod",
+    "url": "https://tanod.dev"
+  },
+  "homepage": "https://tanod.dev/mcp-servers/",
+  "repository": "https://github.com/tanod-labs/tanod-mcp",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "tanod",
+    "tanod"
+  ]
+}
