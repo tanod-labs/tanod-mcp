@@ -1,0 +1,17 @@
+{
+  "name": "tanod-agents",
+  "version": "1.0.0",
+  "description": "Index of x402 endpoints and MCP servers (query, history, export) and agent-package scans.",
+  "author": {
+    "name": "Tanod",
+    "url": "https://tanod.dev"
+  },
+  "homepage": "https://tanod.dev/mcp-servers/",
+  "repository": "https://github.com/tanod-labs/tanod-mcp",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "tanod",
+    "agents"
+  ]
+}

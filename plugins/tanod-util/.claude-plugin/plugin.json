@@ -1,0 +1,17 @@
+{
+  "name": "tanod-util",
+  "version": "1.0.0",
+  "description": "Developer utilities: encode, hash, HMAC, IDs, JSON, data conversion, cron, time zones, QR codes.",
+  "author": {
+    "name": "Tanod",
+    "url": "https://tanod.dev"
+  },
+  "homepage": "https://tanod.dev/mcp-servers/",
+  "repository": "https://github.com/tanod-labs/tanod-mcp",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "tanod",
+    "util"
+  ]
+}

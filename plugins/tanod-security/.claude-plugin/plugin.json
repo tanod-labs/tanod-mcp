@@ -1,0 +1,17 @@
+{
+  "name": "tanod-security",
+  "version": "1.0.0",
+  "description": "Contract and agent-package scans, phishing URL and OFAC checks, domain and header checks.",
+  "author": {
+    "name": "Tanod",
+    "url": "https://tanod.dev"
+  },
+  "homepage": "https://tanod.dev/mcp-servers/",
+  "repository": "https://github.com/tanod-labs/tanod-mcp",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "tanod",
+    "security"
+  ]
+}

@@ -78,3 +78,15 @@ Other clients: <https://tanod.dev/connect/>.
 Tanod (<https://tanod.dev>) also runs free browser tools at <https://tanod.dev/tools/> and free network monitoring at <https://tanod.dev/monitor/>. Contact: ops@tanod.dev.
 
 This repository holds the public description and registry metadata of the hosted server. The server itself is hosted at tanod.dev.
+
+## Claude Code plugins
+
+This repository is also a plugin marketplace: one plugin per focused server, plus the all-in-one server.
+
+```
+/plugin marketplace add tanod-labs/tanod-mcp
+/plugin install tanod-security@tanod      # or tanod-chain, tanod-sky, tanod-finance, tanod-docs, tanod-images,
+                                          # tanod-text, tanod-util, tanod-web, tanod-ml, tanod-agents, or tanod (all)
+```
+
+Each plugin only adds the hosted MCP server; nothing runs locally. The free daily allowance applies automatically; paid calls return x402 payment instructions.
