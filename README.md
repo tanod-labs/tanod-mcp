@@ -90,3 +90,16 @@ This repository is also a plugin marketplace: one plugin per focused server, plu
 ```
 
 Each plugin only adds the hosted MCP server; nothing runs locally. The free daily allowance applies automatically; paid calls return x402 payment instructions.
+
+## Troubleshooting
+
+A server URL is the whole address: Streamable HTTP, JSON-RPC over POST, no `/sse` or `/mcp` suffix, and there is no `/api/mcp`. Tanod's servers are stateless, so `tools/list` works as the first request and checks any of them from a shell:
+
+```sh
+curl -s -X POST https://tanod.dev/mcp/docs \
+  -H "Content-Type: application/json" \
+  -H "Accept: application/json, text/event-stream" \
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
+```
+
+Status codes one by one (404 on `/sse`, 406 Not Acceptable, 415, session 400s, 405 on GET, 402 price quotes, timeouts): https://tanod.dev/learn/mcp-server-connection-errors.html
