@@ -1,6 +1,6 @@
 # Tanod MCP server
 
-One remote MCP server with **119 tools** for AI agents: `https://tanod.dev/mcp`.
+One remote MCP server with **120+ tools** for AI agents: `https://tanod.dev/mcp`.
 
 - **Connection:** streamable HTTP and stateless, with no API key, no account and no OAuth.
 - **Price:** free daily allowance per IP on every tool (applied automatically over MCP). Past that, pay per call in USDC on Base or Polygon with [x402](https://tanod.dev/learn/pay-per-call-api-x402.html) from an x402-capable client (the [Tanod SDKs](https://github.com/tanod-labs/integrations) or any x402 library).
@@ -19,7 +19,7 @@ One remote MCP server with **119 tools** for AI agents: `https://tanod.dev/mcp`.
 | chainpeek | ENS, balances, tokens, calldata, gas, blocks, prices, OFAC screening, phishing URL check |
 | findpeek | Web search |
 | weatherpeek | Weather forecast (MET Norway) |
-| utilpeek | FX, QR/barcodes, geocoding, holidays, phone/IBAN/VAT checks, text and data tools |
+| utilpeek | SEC EDGAR company lookup, US Treasury yield curve, FX, HMAC sign/verify (webhook signatures), QR/barcodes, geocoding, holidays, phone/IBAN/VAT checks, text and data tools |
 | pdfpeek | Merge, split, compress, OCR, protect/unlock, watermark and more |
 | imagepeek | Resize, convert, compress, crop, metadata, watermark, blurhash |
 | mlpeek | Local CPU models: embeddings, rerank, similarity, named entities, zero-shot classification |
