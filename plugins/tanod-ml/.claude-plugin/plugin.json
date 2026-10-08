@@ -1,0 +1,17 @@
+{
+  "name": "tanod-ml",
+  "version": "1.0.0",
+  "description": "Local ML: text embeddings, reranking, similarity, named entities, zero-shot classification.",
+  "author": {
+    "name": "Tanod",
+    "url": "https://tanod.dev"
+  },
+  "homepage": "https://tanod.dev/mcp-servers/",
+  "repository": "https://github.com/tanod-labs/tanod-mcp",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "tanod",
+    "ml"
+  ]
+}

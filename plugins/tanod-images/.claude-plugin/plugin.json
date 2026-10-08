@@ -1,0 +1,17 @@
+{
+  "name": "tanod-images",
+  "version": "1.0.0",
+  "description": "Image toolkit: resize, convert, compress, crop, metadata, hashes, favicons, OCR, QR codes, barcodes.",
+  "author": {
+    "name": "Tanod",
+    "url": "https://tanod.dev"
+  },
+  "homepage": "https://tanod.dev/mcp-servers/",
+  "repository": "https://github.com/tanod-labs/tanod-mcp",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "tanod",
+    "images"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "tanod-chain": {
+      "type": "http",
+      "url": "https://tanod.dev/mcp/chain"
+    }
+  }
+}

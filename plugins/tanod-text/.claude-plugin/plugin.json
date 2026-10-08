@@ -1,0 +1,17 @@
+{
+  "name": "tanod-text",
+  "version": "1.0.0",
+  "description": "Text tools: stats, language, case, lines, replace, extract, keywords, summary, sentiment, diff.",
+  "author": {
+    "name": "Tanod",
+    "url": "https://tanod.dev"
+  },
+  "homepage": "https://tanod.dev/mcp-servers/",
+  "repository": "https://github.com/tanod-labs/tanod-mcp",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "tanod",
+    "text"
+  ]
+}

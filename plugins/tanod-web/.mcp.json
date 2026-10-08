@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "tanod-web": {
+      "type": "http",
+      "url": "https://tanod.dev/mcp/web"
+    }
+  }
+}
