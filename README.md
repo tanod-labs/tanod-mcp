@@ -2,11 +2,31 @@
 
 [![smithery badge](https://smithery.ai/badge/tanod-labs/tanod)](https://smithery.ai/servers/tanod-labs/tanod)
 
-One remote MCP server with **120+ tools** for AI agents: `https://tanod.dev/mcp`.
+One remote MCP server with **120+ tools** (also split into 11 focused servers, below) for AI agents: `https://tanod.dev/mcp`.
 
 - **Connection:** streamable HTTP and stateless, with no API key, no account and no OAuth.
 - **Price:** free daily allowance per IP on every tool (applied automatically over MCP). Past that, pay per call in USDC on Base or Polygon with [x402](https://tanod.dev/learn/pay-per-call-api-x402.html) from an x402-capable client (the [Tanod SDKs](https://github.com/tanod-labs/integrations) or any x402 library).
 - **Setup for 20 clients:** <https://tanod.dev/connect/>. Docs for agents: <https://tanod.dev/llms.txt>. OpenAPI: <https://tanod.dev/openapi.json>.
+
+## Focused servers
+
+Clients that work better with fewer tools can connect a focused server instead. Same tools, same free allowance, only the URL changes. Each is in the official MCP registry as `dev.tanod/<topic>`.
+
+| URL | Tools | What it does |
+|---|---|---|
+| `https://tanod.dev/mcp/security` | 16 | Phishing URL and OFAC checks, contract and package scans, domain checks |
+| `https://tanod.dev/mcp/finance` | 9 | SEC EDGAR lookup, Treasury yields, FX, token prices, DEX candles, business days |
+| `https://tanod.dev/mcp/sky` | 12 | METAR/TAF, airports, space weather, aurora, asteroids, satellite passes |
+| `https://tanod.dev/mcp/docs` | 17 | PDF text, OCR, merge, split, compress, watermark, protect |
+| `https://tanod.dev/mcp/chain` | 19 | Balances, tokens, prices, candles, swap quotes, transactions, ENS |
+| `https://tanod.dev/mcp/images` | 17 | Resize, convert, compress, crop, metadata, QR, barcodes, color contrast |
+| `https://tanod.dev/mcp/text` | 18 | Text statistics, language, diff, Markdown and HTML |
+| `https://tanod.dev/mcp/util` | 19 | Encode, hash, HMAC, IDs, unit conversion, business days, cron, time zones |
+| `https://tanod.dev/mcp/web` | 16 | Web search, page render and metadata, robots, sitemaps, RDAP, IP lookup |
+| `https://tanod.dev/mcp/ml` | 9 | Embeddings, rerank, similarity, entities, classification |
+| `https://tanod.dev/mcp/agents` | 5 | x402 and MCP agent-economy index |
+
+Overview: <https://tanod.dev/mcp-servers/>. Pricing: <https://tanod.dev/pricing/>. Status: <https://tanod.dev/status>.
 
 ## Tool families
 
