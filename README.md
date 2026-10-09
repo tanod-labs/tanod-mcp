@@ -22,7 +22,7 @@ Clients that work better with fewer tools can connect a focused server instead. 
 | `https://tanod.dev/mcp/images` | 17 | Resize, convert, compress, crop, metadata, QR, barcodes, color contrast |
 | `https://tanod.dev/mcp/text` | 18 | Text statistics, language, diff, Markdown and HTML |
 | `https://tanod.dev/mcp/util` | 19 | Encode, hash, HMAC, IDs, unit conversion, business days, cron, time zones |
-| `https://tanod.dev/mcp/web` | 16 | Web search, page render and metadata, robots, sitemaps, RDAP, IP lookup |
+| `https://tanod.dev/mcp/web` | 17 | Web search, page render and metadata, robots, sitemaps, RDAP, IP lookup |
 | `https://tanod.dev/mcp/ml` | 9 | Embeddings, rerank, similarity, entities, classification |
 | `https://tanod.dev/mcp/agents` | 5 | x402 and MCP agent-economy index |
 
