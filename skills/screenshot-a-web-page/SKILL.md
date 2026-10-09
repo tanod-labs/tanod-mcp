@@ -1,7 +1,6 @@
 ---
 name: screenshot-a-web-page
-description:
-  Capture a PNG or JPEG screenshot of a public web page at a chosen viewport, full page or dark mode, for visual checks, archiving, link previews or giving an agent eyes. Use when asked 'what does this page look like', to verify a deploy or a layout, or to attach an image of a page. Triggers on 'screenshot', 'capture the page', 'how does it render on mobile'.
+description: "Capture a PNG or JPEG screenshot of a public web page at a chosen viewport, full page or dark mode, for visual checks, archiving, link previews or giving an agent eyes. Use when asked 'what does this page look like', to verify a deploy or a layout, or to attach an image of a page. Triggers on 'screenshot', 'capture the page', 'how does it render on mobile'."
 license: MIT
 metadata:
   author: tanod

@@ -1,7 +1,6 @@
 ---
 name: scan-mcp-server-or-skill-before-installing
-description:
-  Scan an MCP server, agent skill or plugin package for prompt injection, credential exfiltration, hidden instructions and dangerous code before installing or running it. Use when asked to install an MCP server, add a skill, run `npx`/`pip install` for an agent tool, or evaluate a package from npm, PyPI, GitHub or ClawHub. Triggers on 'install this MCP', 'add this skill', 'is this package safe'.
+description: "Scan an MCP server, agent skill or plugin package for prompt injection, credential exfiltration, hidden instructions and dangerous code before installing or running it. Use when asked to install an MCP server, add a skill, run `npx`/`pip install` for an agent tool, or evaluate a package from npm, PyPI, GitHub or ClawHub. Triggers on 'install this MCP', 'add this skill', 'is this package safe'."
 license: MIT
 metadata:
   author: tanod
