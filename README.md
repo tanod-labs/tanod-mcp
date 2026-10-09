@@ -17,7 +17,7 @@ Clients that work better with fewer tools can connect a focused server instead. 
 | `https://tanod.dev/mcp/security` | 16 | Phishing URL and OFAC checks, contract and package scans, domain checks |
 | `https://tanod.dev/mcp/finance` | 9 | SEC EDGAR lookup, Treasury yields, FX, token prices, DEX candles, business days |
 | `https://tanod.dev/mcp/sky` | 12 | METAR/TAF, airports, space weather, aurora, asteroids, satellite passes |
-| `https://tanod.dev/mcp/docs` | 22 | Office to PDF, PDF to Word, any document to Markdown, PDF tables, bank statements to CSV/Excel, PDF text, OCR, merge, split, compress, watermark, protect |
+| `https://tanod.dev/mcp/docs` | 33 | Office to PDF, PDF to Word, any document to Markdown, PDF tables, bank statements to CSV/Excel, PDF text, OCR, fill and read forms, bookmarks, attachments, page labels, merge, split, compress, watermark, protect |
 | `https://tanod.dev/mcp/chain` | 19 | Balances, tokens, prices, candles, swap quotes, transactions, ENS |
 | `https://tanod.dev/mcp/images` | 17 | Resize, convert, compress, crop, metadata, QR, barcodes, color contrast |
 | `https://tanod.dev/mcp/text` | 18 | Text statistics, language, diff, Markdown and HTML |
