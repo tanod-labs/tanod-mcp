@@ -49,6 +49,11 @@ Overview: <https://tanod.dev/mcp-servers/>. Pricing: <https://tanod.dev/pricing/
 
 Scans and checks are automated and heuristic, not an audit. Aviation data is not for navigation.
 
+## For agents paying x402 endpoints (free)
+
+- [How to check an x402 endpoint before your agent pays it](https://tanod.dev/learn/check-x402-endpoint-before-paying.html): decode the 402 quote, look for real buyers, check listing history, compare the price with the median, screen the payTo address, cap spend.
+- [What agents actually pay for over x402](https://tanod.dev/learn/x402-bazaar-agent-demand-data.html): 30-day payer and call counts from the CDP Bazaar.
+
 ## For x402 sellers (free)
 
 - [x402 listing lint](https://tanod.dev/tools/x402-listing-lint/): paste your 402 response and check it against the CDP Bazaar listing rules (500-character description cap, "use when" sentence, schemas, networks). Runs in your browser; nothing is uploaded.
