@@ -12,7 +12,7 @@
     {
       "name": "tanod",
       "source": "./plugins/tanod",
-      "description": "All 120+ Tanod tools in one server: security checks, chain data, aviation and space, finance, PDF and image toolkits, text, utilities, web and local ML. Pay per call in USDC over x402, or free daily allowance; no API key.",
+      "description": "All 143 Tanod tools in one server: security checks, chain data, aviation and space, finance, PDF and image toolkits, text, utilities, web and local ML. Pay per call in USDC over x402, or free daily allowance; no API key.",
       "version": "1.0.0",
       "category": "utility",
       "homepage": "https://tanod.dev/mcp-servers/"
