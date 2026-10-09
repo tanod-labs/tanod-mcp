@@ -49,6 +49,12 @@ Overview: <https://tanod.dev/mcp-servers/>. Pricing: <https://tanod.dev/pricing/
 
 Scans and checks are automated and heuristic, not an audit. Aviation data is not for navigation.
 
+## For x402 sellers (free)
+
+- [x402 listing lint](https://tanod.dev/tools/x402-listing-lint/): paste your 402 response and check it against the CDP Bazaar listing rules (500-character description cap, "use when" sentence, schemas, networks). Runs in your browser; nothing is uploaded.
+- [State of the x402 Bazaar](https://tanod.dev/learn/state-of-x402-bazaar.html): listings, hosts, prices, networks and metadata quality from our daily index.
+- [Bazaar listing checklist](https://tanod.dev/learn/x402-bazaar-listing-checklist.html).
+
 ## Quick setup
 
 Claude Code:
