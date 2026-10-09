@@ -1,0 +1,17 @@
+{
+  "name": "tanod",
+  "version": "1.0.0",
+  "description": "Hosted MCP tools for agents: PDF, Office and image conversion, OCR, phishing and OFAC checks, contract and package scans, chain data, web screenshots and more. No key, no account; free daily allowance, then pay per call in USDC (x402).",
+  "homepage": "https://tanod.dev",
+  "repository": "https://github.com/tanod-labs/tanod-mcp",
+  "license": "MIT",
+  "keywords": ["mcp", "pdf", "ocr", "x402", "security"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Tanod",
+    "shortDescription": "Hosted pay-per-call MCP tools for agents",
+    "category": "Developer Tools",
+    "websiteURL": "https://tanod.dev"
+  }
+}
