@@ -1,7 +1,6 @@
 ---
 name: monitor-a-router-or-cron-job-from-outside
-description:
-  Set up free outside monitoring for a server, website, MikroTik router or cron job so someone is alerted when it goes down, including devices behind CGNAT with no public IP. Use when asked to 'get an alert when X goes down', 'monitor my router', 'watch this cron job or backup', 'uptime check', or when a self-hosted monitor needs a watchdog. Triggers on uptime, heartbeat, dead man's switch, Netwatch, CGNAT, Telegram alert.
+description: "Set up free outside monitoring for a server, website, MikroTik router or cron job so someone is alerted when it goes down, including devices behind CGNAT with no public IP. Use when asked to 'get an alert when X goes down', 'monitor my router', 'watch this cron job or backup', 'uptime check', or when a self-hosted monitor needs a watchdog. Triggers on uptime, heartbeat, dead man's switch, Netwatch, CGNAT, Telegram alert."
 license: MIT
 metadata:
   author: tanod

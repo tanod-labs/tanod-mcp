@@ -1,7 +1,6 @@
 ---
 name: screen-address-for-ofac-sanctions
-description:
-  Screen a cryptocurrency address against the US OFAC SDN list (digital currency addresses) before transacting, onboarding, or paying out. Use for compliance checks on counterparties, withdrawals, grants, airdrops and marketplace payouts. Triggers on 'sanctions', 'OFAC', 'compliance check', 'can we pay this address'.
+description: "Screen a cryptocurrency address against the US OFAC SDN list (digital currency addresses) before transacting, onboarding, or paying out. Use for compliance checks on counterparties, withdrawals, grants, airdrops and marketplace payouts. Triggers on 'sanctions', 'OFAC', 'compliance check', 'can we pay this address'."
 license: MIT
 metadata:
   author: tanod
