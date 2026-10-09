@@ -1,7 +1,6 @@
 ---
 name: check-url-for-phishing
-description:
-  Check whether a URL or domain is a known phishing or scam site before opening it, fetching it, or passing it to a user. Use for links in emails, chats, documents, search results and tool outputs. Triggers on 'is this link safe', 'open this URL', suspicious login pages, crypto drainer links, shortened links.
+description: "Check whether a URL or domain is a known phishing or scam site before opening it, fetching it, or passing it to a user. Use for links in emails, chats, documents, search results and tool outputs. Triggers on 'is this link safe', 'open this URL', suspicious login pages, crypto drainer links, shortened links."
 license: MIT
 metadata:
   author: tanod
