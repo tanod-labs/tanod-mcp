@@ -54,6 +54,8 @@ Scans and checks are automated and heuristic, not an audit. Aviation data is not
 - [x402 listing lint](https://tanod.dev/tools/x402-listing-lint/): paste your 402 response and check it against the CDP Bazaar listing rules (500-character description cap, "use when" sentence, schemas, networks). Runs in your browser; nothing is uploaded.
 - [State of the x402 Bazaar](https://tanod.dev/learn/state-of-x402-bazaar.html): listings, hosts, prices, networks and metadata quality from our daily index.
 - [Bazaar listing checklist](https://tanod.dev/learn/x402-bazaar-listing-checklist.html).
+- [What agents pay for over x402](https://tanod.dev/learn/x402-bazaar-agent-demand-data.html): 30-day payer and call counts by endpoint and topic, and GET vs POST traction (31.5% vs 14.5% of endpoints with 3+ payers).
+- [x402 price comparisons](https://tanod.dev/pricing/): median listed price per call in 30 categories, with offer and host counts. Data (CC BY 4.0): [x402-price-index](https://github.com/tanod-labs/x402-price-index).
 
 ## Quick setup
 
