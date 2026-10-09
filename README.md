@@ -103,3 +103,5 @@ curl -s -X POST https://tanod.dev/mcp/docs \
 ```
 
 Status codes one by one (404 on `/sse`, 406 Not Acceptable, 415, session 400s, 405 on GET, 402 price quotes, timeouts): https://tanod.dev/learn/mcp-server-connection-errors.html
+
+What shipped recently: https://tanod.dev/changelog/ (Atom feed: https://tanod.dev/changelog/feed.xml).
