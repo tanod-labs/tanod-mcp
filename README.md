@@ -2,7 +2,7 @@
 
 [![smithery badge](https://smithery.ai/badge/tanod-labs/tanod)](https://smithery.ai/servers/tanod-labs/tanod)
 
-One remote MCP server with **143 tools** (also split into 11 focused servers, below) for AI agents: `https://tanod.dev/mcp`.
+One remote MCP server with **145 tools** (also split into 11 focused servers, below) for AI agents: `https://tanod.dev/mcp`.
 
 - **Connection:** streamable HTTP and stateless, with no API key, no account and no OAuth.
 - **Price:** free daily allowance per IP on every tool (applied automatically over MCP). Past that, pay per call in USDC on Base or Polygon with [x402](https://tanod.dev/learn/pay-per-call-api-x402.html) from an x402-capable client (the [Tanod SDKs](https://github.com/tanod-labs/integrations) or any x402 library).
@@ -41,7 +41,7 @@ Overview: <https://tanod.dev/mcp-servers/>. Pricing: <https://tanod.dev/pricing/
 | chainpeek | ENS, balances, tokens, calldata, gas, blocks, prices, OFAC screening, phishing URL check |
 | findpeek | Web search |
 | weatherpeek | Weather forecast (MET Norway) |
-| utilpeek | SEC EDGAR company lookup, US Treasury yield curve, FX, HMAC sign/verify (webhook signatures), QR/barcodes, geocoding, holidays, phone/IBAN/VAT checks, text and data tools |
+| utilpeek | SEC EDGAR company lookup, Peppol e-invoicing participant lookup, US Treasury yield curve, FX, HMAC sign/verify (webhook signatures), QR/barcodes, geocoding, holidays, phone/IBAN/VAT checks, text and data tools |
 | pdfpeek | Merge, split, compress, OCR, protect/unlock, watermark and more |
 | imagepeek | Resize, convert, compress, crop, metadata, watermark, blurhash |
 | mlpeek | Local CPU models: embeddings, rerank, similarity, named entities, zero-shot classification |
