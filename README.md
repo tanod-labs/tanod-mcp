@@ -3,7 +3,7 @@
 [![smithery badge](https://smithery.ai/badge/tanod-labs/tanod)](https://smithery.ai/servers/tanod-labs/tanod)
 [![Product Hunt](https://img.shields.io/badge/Product%20Hunt-Tanod-da552f?logo=producthunt&logoColor=white)](https://www.producthunt.com/products/tanod)
 
-One remote MCP server with **165 tools** (also split into 11 focused servers, below) for AI agents: `https://tanod.dev/mcp`.
+One remote MCP server with **170 tools** (also split into 11 focused servers, below) for AI agents: `https://tanod.dev/mcp`.
 
 - **Connection:** streamable HTTP and stateless, with no API key, no account and no OAuth.
 - **Price:** free daily allowance per IP on every tool (applied automatically over MCP). Past that, pay per call in USDC on Base or Polygon with [x402](https://tanod.dev/learn/pay-per-call-api-x402.html) from an x402-capable client (the [Tanod SDKs](https://github.com/tanod-labs/integrations) or any x402 library).
@@ -18,14 +18,16 @@ Clients that work better with fewer tools can connect a focused server instead. 
 | `https://tanod.dev/mcp/security` | 16 | Phishing URL and OFAC checks, contract and package scans, domain checks |
 | `https://tanod.dev/mcp/finance` | 10 | SEC EDGAR lookup and XBRL financial statements, Treasury yields, FX, token prices, DEX candles, business days |
 | `https://tanod.dev/mcp/sky` | 12 | METAR/TAF, airports, space weather, aurora, asteroids, satellite passes |
-| `https://tanod.dev/mcp/docs` | 35 | DOCX template fill from JSON, multi-step PDF pipeline, Office to PDF, PDF to Word, any document to Markdown, PDF tables, bank statements to CSV/Excel, PDF text, OCR, fill and read forms, bookmarks, attachments, page labels, merge, split, compress, watermark, protect |
-| `https://tanod.dev/mcp/chain` | 33 | EVM and Solana reads: balances, tokens, eth_call, storage, logs, receipts, gas estimates, prices, candles, swap quotes, transactions, ENS |
+| `https://tanod.dev/mcp/docs` | 38 | DOCX template fill from JSON, multi-step PDF pipeline, Office to PDF, PDF to Word, any document to Markdown, PDF tables, bank statements to CSV/Excel, PDF text, OCR, fill and read forms, bookmarks, attachments, page labels, merge, split, compress, watermark, protect |
+| `https://tanod.dev/mcp/chain` | 34 | EVM and Solana reads: balances, tokens, eth_call, storage, logs, receipts, gas estimates, prices, candles, swap quotes, transactions, ENS |
 | `https://tanod.dev/mcp/images` | 17 | Resize, convert, compress, crop, metadata, QR, barcodes, color contrast |
 | `https://tanod.dev/mcp/text` | 18 | Text statistics, language, diff, Markdown and HTML |
 | `https://tanod.dev/mcp/util` | 21 | Encode, hash, HMAC, IDs, unit conversion, business days, cron, time zones |
-| `https://tanod.dev/mcp/web` | 19 | Web search, company profile and open jobs from a domain, page render and metadata, robots, sitemaps, RDAP, IP lookup |
+| `https://tanod.dev/mcp/web` | 20 | Web search, company profile and open jobs from a domain, page render and metadata, robots, sitemaps, RDAP, IP lookup |
 | `https://tanod.dev/mcp/ml` | 10 | Speech to text (SRT/WebVTT), embeddings, rerank, similarity, entities, classification |
 | `https://tanod.dev/mcp/agents` | 5 | x402 and MCP agent-economy index |
+
+Four are also listed on Smithery: [security](https://smithery.ai/servers/tanod-labs/security-scans), [docs](https://smithery.ai/servers/tanod-labs/pdf-and-docs), [images](https://smithery.ai/servers/tanod-labs/image-tools), [web](https://smithery.ai/servers/tanod-labs/web-search-markdown-screenshots).
 
 Overview: <https://tanod.dev/mcp-servers/>. Pricing: <https://tanod.dev/pricing/>. Status: <https://tanod.dev/status>.
 
