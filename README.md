@@ -1,6 +1,7 @@
 # Tanod MCP server
 
 [![smithery badge](https://smithery.ai/badge/tanod-labs/tanod)](https://smithery.ai/servers/tanod-labs/tanod)
+[![Product Hunt](https://img.shields.io/badge/Product%20Hunt-Tanod-da552f?logo=producthunt&logoColor=white)](https://www.producthunt.com/products/tanod)
 
 One remote MCP server with **165 tools** (also split into 11 focused servers, below) for AI agents: `https://tanod.dev/mcp`.
 
