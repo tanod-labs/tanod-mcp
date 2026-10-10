@@ -91,6 +91,8 @@ VS Code (`.vscode/mcp.json`):
 
 Claude Desktop / claude.ai: add a custom connector with the URL above and leave the OAuth fields empty.
 
+Free document tools in claude.ai and ChatGPT: add `https://tanod.dev/mcp/docs` as a custom connector (39 PDF, OCR and Office tools). Calls from those apps share a free pool of 2,000 document calls a day; past that, the per-call price applies. Walkthrough: <https://dev.to/tanod/add-free-pdf-ocr-and-office-conversion-tools-to-claudeai-and-chatgpt-with-one-mcp-connector-5g43>.
+
 Other clients: <https://tanod.dev/connect/>.
 
 ## About
