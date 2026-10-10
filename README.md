@@ -64,6 +64,7 @@ Scans and checks are automated and heuristic, not an audit. Aviation data is not
 - [Bazaar listing checklist](https://tanod.dev/learn/x402-bazaar-listing-checklist.html).
 - [x402 facilitator support](https://tanod.dev/learn/x402-facilitator-support.html): which schemes (exact, upto, batch-settlement) Coinbase CDP, PayAI, Dexter, Daydreams, x402.rs and x402.org settle on each of 11 mainnets, read from their `/supported` endpoints.
 - [Who pays new x402 listings](https://tanod.dev/learn/x402-explorer-wallets.html): on-chain data on a cohort of 124 wallets that sample new cheap listings, and how to read Bazaar payer counts.
+- [State of the MCP Registry](https://tanod.dev/learn/state-of-mcp-registry.html): daily counts for the official MCP Registry (41,606 servers): remote vs package, transports, npm/PyPI/OCI split, new servers per month, largest namespaces.
 - [What agents pay for over x402](https://tanod.dev/learn/x402-bazaar-agent-demand-data.html): 30-day payer and call counts by endpoint and topic, and GET vs POST traction (31.5% vs 14.5% of endpoints with 3+ payers).
 - [x402 price comparisons](https://tanod.dev/pricing/): median listed price per call in 30 categories, with offer and host counts. Data (CC BY 4.0): [x402-price-index](https://github.com/tanod-labs/x402-price-index).
 
