@@ -29,10 +29,13 @@ MCP tool: `text_unicode_inspect` with `text`; set `strip_invisible: true` to get
 
 HTTP:
 
-```
-curl -s -X POST https://tanod.dev/v1/text/unicode \
-  -H 'content-type: application/json' -H 'X-Tanod-Free: 1' \
-  -d '{"text":"...","strip_invisible":true}'
+```http
+POST /v1/text/unicode HTTP/1.1
+Host: tanod.dev
+content-type: application/json
+X-Tanod-Free: 1
+
+{"text":"...","strip_invisible":true}
 ```
 
 ## Reading the result

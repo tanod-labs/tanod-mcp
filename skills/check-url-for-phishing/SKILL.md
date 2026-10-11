@@ -28,10 +28,13 @@ MCP tool: `check_url_phishing` with `url` (a full URL or a bare domain). For man
 
 HTTP:
 
-```
-curl -s -X POST https://tanod.dev/v1/check/url \
-  -H 'content-type: application/json' -H 'X-Tanod-Free: 1' \
-  -d '{"url":"https://example.com/login"}'
+```http
+POST /v1/check/url HTTP/1.1
+Host: tanod.dev
+content-type: application/json
+X-Tanod-Free: 1
+
+{"url":"https://example.com/login"}
 ```
 
 ## Reading the result

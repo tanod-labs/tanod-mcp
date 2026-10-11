@@ -28,10 +28,13 @@ MCP tool: `check_sanctions` with `address`; `check_sanctions_batch` for a list.
 
 HTTP:
 
-```
-curl -s -X POST https://tanod.dev/v1/sanctions \
-  -H 'content-type: application/json' -H 'X-Tanod-Free: 1' \
-  -d '{"address":"0x..."}'
+```http
+POST /v1/sanctions HTTP/1.1
+Host: tanod.dev
+content-type: application/json
+X-Tanod-Free: 1
+
+{"address":"0x..."}
 ```
 
 ## Reading the result
