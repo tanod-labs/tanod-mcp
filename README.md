@@ -129,7 +129,7 @@ Development: `npm ci && npm test`. Source is in `src/`, tests in `test/`.
 
 Tanod (<https://tanod.dev>) also runs free browser tools at <https://tanod.dev/tools/> and free network monitoring at <https://tanod.dev/monitor/>. Contact: ops@tanod.dev.
 
-This repository holds the public description and registry metadata of the hosted server. The server itself is hosted at tanod.dev.
+This repository holds the source of the `tanod-mcp` stdio MCP server (`src/`, MIT, on npm as `tanod-mcp`) and the public description and registry metadata of the hosted server. The tools themselves run on the hosted API at tanod.dev.
 
 ## Claude Code plugins
 
