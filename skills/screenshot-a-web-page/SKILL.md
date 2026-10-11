@@ -27,10 +27,12 @@ MCP tool: `take_website_screenshot` with `url`, optional `width` (320–1920, de
 
 HTTP:
 
-```
-curl -s -X POST https://tanod.dev/v1/web/screenshot \
-  -H 'content-type: application/json' \
-  -d '{"url":"https://example.com","full_page":true,"format":"jpeg"}'
+```http
+POST /v1/web/screenshot HTTP/1.1
+Host: tanod.dev
+content-type: application/json
+
+{"url":"https://example.com","full_page":true,"format":"jpeg"}
 ```
 
 ## Reading the result
