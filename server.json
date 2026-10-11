@@ -2,9 +2,53 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
   "name": "dev.tanod/tanod",
   "title": "Tanod",
-  "description": "196 pay-per-call tools for AI agents: contract scans, address checks, web reading, DNS, chain data, search, PDF/image/text tools, local ML, aviation and space data. Free daily allowance; x402 USDC.",
+  "description": "About 200 pay-per-call tools for AI agents. Free daily allowance; x402 USDC. Remote or via npx.",
   "websiteUrl": "https://tanod.dev",
-  "repository": { "url": "https://github.com/tanod-labs/tanod-mcp", "source": "github" },
+  "repository": {
+    "url": "https://github.com/tanod-labs/tanod-mcp",
+    "source": "github"
+  },
   "version": "0.3.0",
-  "remotes": [ { "type": "streamable-http", "url": "https://tanod.dev/mcp" } ]
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://tanod.dev/mcp"
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "tanod-mcp",
+      "version": "0.3.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "TANOD_PRIVATE_KEY",
+          "description": "Optional EVM private key of a wallet holding USDC on Base, used to pay for calls beyond the free daily allowance via x402. Unset means free tier only.",
+          "isRequired": false,
+          "isSecret": true
+        },
+        {
+          "name": "TANOD_MAX_USD_PER_CALL",
+          "description": "Refuse to sign any single payment above this many US dollars.",
+          "isRequired": false,
+          "default": "0.05"
+        },
+        {
+          "name": "TANOD_MAX_USD_PER_DAY",
+          "description": "Refuse to sign once the UTC-day total would exceed this many US dollars.",
+          "isRequired": false,
+          "default": "1.00"
+        },
+        {
+          "name": "TANOD_MCP_URL",
+          "description": "Upstream MCP URL (testing only).",
+          "isRequired": false,
+          "default": "https://tanod.dev/mcp"
+        }
+      ]
+    }
+  ]
 }
