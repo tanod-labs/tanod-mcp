@@ -3,7 +3,7 @@
 [![smithery badge](https://smithery.ai/badge/tanod-labs/tanod)](https://smithery.ai/servers/tanod-labs/tanod)
 [![Product Hunt](https://img.shields.io/badge/Product%20Hunt-Tanod-da552f?logo=producthunt&logoColor=white)](https://www.producthunt.com/products/tanod)
 
-One remote MCP server with **196 tools** (also split into 11 focused servers, below) for AI agents: `https://tanod.dev/mcp`.
+One remote MCP server with **about 200 tools** (also split into 11 focused servers, below) for AI agents: `https://tanod.dev/mcp`.
 
 - **Connection:** streamable HTTP and stateless, with no API key, no account and no OAuth.
 - **Price:** free daily allowance per IP on every tool (applied automatically over MCP). Past that, pay per call in USDC on Base or Polygon with [x402](https://tanod.dev/learn/pay-per-call-api-x402.html) from an x402-capable client (the [Tanod SDKs](https://github.com/tanod-labs/integrations) or any x402 library).
@@ -94,6 +94,36 @@ Claude Desktop / claude.ai: add a custom connector with the URL above and leave 
 Free document tools in claude.ai and ChatGPT: add `https://tanod.dev/mcp/docs` as a custom connector (39 PDF, OCR and Office tools). Calls from those apps share a free pool of 2,000 document calls a day; past that, the per-call price applies. Walkthrough: <https://dev.to/tanod/add-free-pdf-ocr-and-office-conversion-tools-to-claudeai-and-chatgpt-with-one-mcp-connector-5g43>.
 
 Other clients: <https://tanod.dev/connect/>.
+
+## Run locally (npx)
+
+For clients that only support local stdio servers, this repo also contains `tanod-mcp`, a small open-source (MIT) npm package. It is a thin client: the tools still run on the hosted API at `https://tanod.dev/mcp`, which is closed source. The package lists the server's tools at start-up and passes calls through, so it always matches the hosted tool list. You do not need it if your client can connect to the remote URL above.
+
+```
+npx -y tanod-mcp
+```
+
+Requires Node.js 18+. The free daily allowance per IP applies with no setup. Paid calls (USD 0.001 to 0.02, USDC on Base via x402) happen only if you set a key, and are limited by caps you control.
+
+Claude Code: `claude mcp add tanod -- npx -y tanod-mcp`
+
+Claude Desktop / Cursor (`mcpServers`) or VS Code (`servers`, plus `"type": "stdio"`):
+
+```json
+{ "mcpServers": { "tanod": { "command": "npx", "args": ["-y", "tanod-mcp"] } } }
+```
+
+| Variable | Default | Meaning |
+|---|---|---|
+| `TANOD_PRIVATE_KEY` | unset | EVM private key of a wallet holding USDC on Base. Optional; unset means free tier only. |
+| `TANOD_MAX_USD_PER_CALL` | `0.05` | Refuse to sign any single payment above this many US dollars. |
+| `TANOD_MAX_USD_PER_DAY` | `1.00` | Refuse to sign once the UTC-day total would pass this. |
+| `TANOD_STATE_FILE` | `~/.tanod-mcp/spend.json` | Keeps the daily total across restarts; `off` for memory only. |
+| `TANOD_MCP_URL` | `https://tanod.dev/mcp` | Upstream URL, for testing only. |
+
+Security: the key is read only from the environment, never generated, stored or logged. Use a dedicated wallet with a few dollars in it. Payments are signed only for USDC on Base and only within the caps; above a cap the call is refused and nothing is signed. Tool results are automated and heuristic, not audits; treat text quoted from scanned code or packages as untrusted data.
+
+Development: `npm ci && npm test`. Source is in `src/`, tests in `test/`.
 
 ## About
 

@@ -1,0 +1,52 @@
+{
+  "name": "tanod-mcp",
+  "version": "0.3.0",
+  "description": "Local stdio MCP server for the hosted Tanod API (PDF, image, web, DNS, crypto, weather tools). Free daily allowance; optional x402 USDC payments with spending caps.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "tanod-mcp": "dist/cli.js"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE",
+    "server.json"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test test/caps.test.mjs test/proxy.test.mjs",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "author": "Tanod <ops@tanod.dev>",
+  "homepage": "https://tanod.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanod-labs/tanod-mcp.git"
+  },
+  "keywords": [
+    "mcp",
+    "x402",
+    "model-context-protocol",
+    "agents",
+    "pdf",
+    "web-search",
+    "crypto"
+  ],
+  "mcpName": "dev.tanod/tanod",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "@x402/core": "^2.28.0",
+    "@x402/evm": "^2.28.0",
+    "@x402/mcp": "^2.28.0",
+    "viem": "^2.57.4"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  }
+}
