@@ -28,10 +28,13 @@ MCP tool: `scan_agent_package` with `source` (an npm or PyPI package name, a Git
 
 HTTP:
 
-```
-curl -s -X POST https://tanod.dev/v1/scan/package \
-  -H 'content-type: application/json' -H 'X-Tanod-Free: 1' \
-  -d '{"source":"npm:some-mcp-server"}'
+```http
+POST /v1/scan/package HTTP/1.1
+Host: tanod.dev
+content-type: application/json
+X-Tanod-Free: 1
+
+{"source":"npm:some-mcp-server"}
 ```
 
 ## Reading the result

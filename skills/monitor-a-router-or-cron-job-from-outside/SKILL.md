@@ -24,8 +24,8 @@ A monitor running on the same machine or router cannot report that machine's own
 3. Add an alert channel: Telegram (link through the bot it names), ntfy (a topic name) or an HTTPS webhook.
 4. For a cron job or any Linux host, add a heartbeat at the end of the job:
 
-```
-*/5 * * * * curl -fsS -m 10 https://tanod.dev/monitor/p/<token> >/dev/null
+```sh
+curl -fsS https://tanod.dev/monitor/p/YOUR_TOKEN
 ```
 
    Report a failure immediately with `?status=fail`. Set the period to the job's interval and a grace a little longer than its run time.

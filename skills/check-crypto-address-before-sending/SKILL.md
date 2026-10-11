@@ -29,10 +29,13 @@ MCP tool: `check_contract_before_interaction` with `address` and `chain` (`base`
 
 HTTP:
 
-```
-curl -s -X POST https://tanod.dev/v1/check/address \
-  -H 'content-type: application/json' -H 'X-Tanod-Free: 1' \
-  -d '{"address":"0x...","chain":"base"}'
+```http
+POST /v1/check/address HTTP/1.1
+Host: tanod.dev
+content-type: application/json
+X-Tanod-Free: 1
+
+{"address":"0x...","chain":"base"}
 ```
 
 ## Reading the result
