@@ -22,11 +22,7 @@ A monitor running on the same machine or router cannot report that machine's own
 1. Open https://tanod.dev/monitor/ and add a monitor. Types: Website (HTTP), Ping, TCP port, DNS record, TLS certificate expiry, Domain expiry, Cron job / heartbeat (push), MikroTik router (push).
 2. Save the manage link it shows once; there is no login.
 3. Add an alert channel: Telegram (link through the bot it names), ntfy (a topic name) or an HTTPS webhook.
-4. For a cron job or any Linux host, add a heartbeat at the end of the job:
-
-```sh
-curl -fsS https://tanod.dev/monitor/p/YOUR_TOKEN
-```
+4. For a cron job or any Linux host, add a heartbeat at the end of the job: an HTTP GET to the heartbeat URL the monitor page shows (`https://tanod.dev/monitor/p/YOUR_TOKEN`).
 
    Report a failure immediately with `?status=fail`. Set the period to the job's interval and a grace a little longer than its run time.
 5. For a MikroTik router, copy the generated RouterOS script (v6 or v7) into `/system script` and schedule it; the router then pushes CPU, temperature, memory and interface status every 5 minutes, and an alert fires when pushes stop.
