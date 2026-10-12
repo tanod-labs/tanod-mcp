@@ -143,7 +143,7 @@ This repository holds the source of the `tanod-mcp` stdio MCP server (`src/`, MI
 | [pdf-tables](skills/pdf-tables/SKILL.md) | `POST /v1/pdf/tables` | USD 0.01 |
 | [bank-statement](skills/bank-statement/SKILL.md) | `POST /v1/pdf/bank-statement` | USD 0.02 |
 | [pdf-to-word](skills/pdf-to-word/SKILL.md) | `POST /v1/pdf/to-docx` | USD 0.01 |
-| [ocr](skills/ocr/SKILL.md) | `POST /v1/ocr`, `POST /v1/pdf/ocr` | USD 0.01 |
+| [ocr](skills/ocr/SKILL.md) | `POST /v1/ocr`, `POST /v1/pdf/ocr` | USD 0.01 (PDF of 6-10 pages: USD 0.02) |
 
 The same files are served at `https://tanod.dev/skills/<name>/SKILL.md` and listed in https://tanod.dev/llms.txt.
 
