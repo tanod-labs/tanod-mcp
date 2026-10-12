@@ -133,6 +133,20 @@ Tanod (<https://tanod.dev>) also runs free browser tools at <https://tanod.dev/t
 
 This repository holds the source of the `tanod-mcp` stdio MCP server (`src/`, MIT, on npm as `tanod-mcp`) and the public description and registry metadata of the hosted server. The tools themselves run on the hosted API at tanod.dev.
 
+## Agent Skills
+
+`skills/` holds Agent Skills (SKILL.md) that tell a coding agent when and how to call each tool. Install them all with `npx skills add tanod-labs/tanod-mcp`, or copy one folder into your agent's skills directory. Tanod Documents, one skill per task:
+
+| Skill | Route | Price |
+|---|---|---|
+| [document-to-markdown](skills/document-to-markdown/SKILL.md) | `POST /v1/docs/to-markdown` | USD 0.005 |
+| [pdf-tables](skills/pdf-tables/SKILL.md) | `POST /v1/pdf/tables` | USD 0.01 |
+| [bank-statement](skills/bank-statement/SKILL.md) | `POST /v1/pdf/bank-statement` | USD 0.02 |
+| [pdf-to-word](skills/pdf-to-word/SKILL.md) | `POST /v1/pdf/to-docx` | USD 0.01 |
+| [ocr](skills/ocr/SKILL.md) | `POST /v1/ocr`, `POST /v1/pdf/ocr` | USD 0.01 |
+
+The same files are served at `https://tanod.dev/skills/<name>/SKILL.md` and listed in https://tanod.dev/llms.txt.
+
 ## Claude Code plugins
 
 This repository is also a plugin marketplace: one plugin per focused server, plus the all-in-one server.
