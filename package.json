@@ -26,7 +26,7 @@
   "homepage": "https://tanod.dev",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tanod-labs/tanod-mcp.git"
+    "url": "git+https://github.com/aiexp1/tanod-mcp.git"
   },
   "keywords": [
     "mcp",

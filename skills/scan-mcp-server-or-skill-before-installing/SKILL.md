@@ -18,7 +18,7 @@ Agent packages run with your tools and your credentials. Scan them first: the sc
 
 ## Access
 
-- MCP (preferred): add the hosted server https://tanod.dev/mcp/security (Streamable HTTP). In Claude Code: `claude mcp add --transport http tanod https://tanod.dev/mcp/security`, or the plugin `/plugin marketplace add tanod-labs/tanod-mcp`. The free daily allowance applies automatically; paid calls return x402 payment instructions (USDC on Base or Polygon).
+- MCP (preferred): add the hosted server https://tanod.dev/mcp/security (Streamable HTTP). In Claude Code: `claude mcp add --transport http tanod https://tanod.dev/mcp/security`, or the plugin `/plugin marketplace add aiexp1/tanod-mcp`. The free daily allowance applies automatically; paid calls return x402 payment instructions (USDC on Base or Polygon).
 - HTTP: `POST https://tanod.dev/v1/scan/package` with a JSON body. Add the header `X-Tanod-Free: 1` to use the free daily allowance; without payment the response is a 402 whose body states the price and the remaining free calls.
 - No API key, no account. Price: USD 0.02 per package (USD 0.05 for a whole repository or a large upload); 3 free scans per IP per day, shared with the other scanners.
 

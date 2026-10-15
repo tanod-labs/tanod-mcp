@@ -17,7 +17,7 @@ Render a public URL in a sandboxed browser and get the image back as base64 with
 
 ## Access
 
-- MCP (preferred): add the hosted server https://tanod.dev/mcp/web (Streamable HTTP). In Claude Code: `claude mcp add --transport http tanod https://tanod.dev/mcp/web`, or the plugin `/plugin marketplace add tanod-labs/tanod-mcp`. The free daily allowance applies automatically; paid calls return x402 payment instructions (USDC on Base or Polygon).
+- MCP (preferred): add the hosted server https://tanod.dev/mcp/web (Streamable HTTP). In Claude Code: `claude mcp add --transport http tanod https://tanod.dev/mcp/web`, or the plugin `/plugin marketplace add aiexp1/tanod-mcp`. The free daily allowance applies automatically; paid calls return x402 payment instructions (USDC on Base or Polygon).
 - HTTP: `POST https://tanod.dev/v1/web/screenshot` with a JSON body. Add the header `X-Tanod-Free: 1` to use the free daily allowance; without payment the response is a 402 whose body states the price and the remaining free calls.
 - No API key, no account. Price: USD 0.005 per capture; no free tier on this route (it drives a real browser).
 

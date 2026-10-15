@@ -2,10 +2,10 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
   "name": "dev.tanod/tanod",
   "title": "Tanod",
-  "description": "About 200 pay-per-call tools for AI agents. Free daily allowance; x402 USDC. Remote or via npx.",
+  "description": "About 260 pay-per-call tools for AI agents. Free daily allowance; x402 USDC. Remote or via npx.",
   "websiteUrl": "https://tanod.dev",
   "repository": {
-    "url": "https://github.com/tanod-labs/tanod-mcp",
+    "url": "https://github.com/aiexp1/tanod-mcp",
     "source": "github"
   },
   "version": "0.3.0",
