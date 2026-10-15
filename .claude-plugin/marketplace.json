@@ -37,7 +37,7 @@
       "name": "tanod-docs",
       "source": "./plugins/tanod-docs",
       "description": "Documents: PDF text and tables, OCR, any document to Markdown, PDF to Word, Office to PDF, DOCX templates, bank statements to CSV, and a full PDF toolkit (merge, split, compress, forms, watermark).",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "category": "utility",
       "homepage": "https://tanod.dev/mcp-servers/"
     },
