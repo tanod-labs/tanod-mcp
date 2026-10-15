@@ -1,5 +1,4 @@
 {
-  "strict": false,
   "name": "tanod",
   "owner": {
     "name": "Tanod",
@@ -13,8 +12,8 @@
     {
       "name": "tanod",
       "source": "./plugins/tanod",
-      "description": "All 143 Tanod tools in one server: security checks, chain data, aviation and space, finance, PDF and image toolkits, text, utilities, web and local ML. Pay per call in USDC over x402, or free daily allowance; no API key.",
-      "version": "1.0.0",
+      "description": "Every Tanod tool in one server: security checks, chain data, aviation and space, finance, documents and PDF, images, text, utilities, web and local ML. Pay per call in USDC over x402, or use the free daily allowance; no API key.",
+      "version": "1.0.1",
       "category": "utility",
       "homepage": "https://tanod.dev/mcp-servers/"
     },
@@ -37,8 +36,8 @@
     {
       "name": "tanod-docs",
       "source": "./plugins/tanod-docs",
-      "description": "PDF toolkit: extract text, OCR, merge, split, rotate, compress, watermark, protect, HTML to PDF.",
-      "version": "1.0.0",
+      "description": "Documents: PDF text and tables, OCR, any document to Markdown, PDF to Word, Office to PDF, DOCX templates, bank statements to CSV, and a full PDF toolkit (merge, split, compress, forms, watermark).",
+      "version": "1.0.1",
       "category": "utility",
       "homepage": "https://tanod.dev/mcp-servers/"
     },
