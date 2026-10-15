@@ -6,7 +6,7 @@
 One remote MCP server with **about 260 tools** (also split into 11 focused servers, below) for AI agents: `https://tanod.dev/mcp`.
 
 - **Connection:** streamable HTTP and stateless, with no API key, no account and no OAuth.
-- **Price:** free daily allowance per IP on every tool (applied automatically over MCP). Past that, pay per call in USDC on Base or Polygon with [x402](https://tanod.dev/learn/pay-per-call-api-x402.html?src=gh_mcp) from an x402-capable client (the [Tanod SDKs](https://github.com/aiexp1/integrations) or any x402 library).
+- **Price:** free daily allowance per IP on every tool (applied automatically over MCP). Past that, pay per call in USDC on Base or Polygon with [x402](https://tanod.dev/learn/pay-per-call-api-x402.html?src=gh_mcp) from an x402-capable client (the [Tanod SDKs](https://github.com/aiexp1/tanod-integrations) or any x402 library).
 - **Setup for 20 clients:** <https://tanod.dev/connect/?src=gh_mcp>. Docs for agents: <https://tanod.dev/llms.txt>. OpenAPI: <https://tanod.dev/openapi.json>.
 
 ## Focused servers
@@ -67,7 +67,7 @@ Scans and checks are automated and heuristic, not an audit. Aviation data is not
 - [State of the MCP Registry](https://tanod.dev/learn/state-of-mcp-registry.html?src=gh_mcp): daily counts for the official MCP Registry (41,606 servers): remote vs package, transports, npm/PyPI/OCI split, new servers per month, largest namespaces.
 - [tanod/mcp-registry-servers](https://huggingface.co/datasets/tanod/mcp-registry-servers) on Hugging Face: every server in the official MCP Registry, one row each (name, title, description, version, transports, remote URLs, package registries, repository), refreshed daily, CC BY 4.0.
 - [What agents pay for over x402](https://tanod.dev/learn/x402-bazaar-agent-demand-data.html?src=gh_mcp): 30-day payer and call counts by endpoint and topic, and GET vs POST traction (31.5% vs 14.5% of endpoints with 3+ payers).
-- [x402 price comparisons](https://tanod.dev/pricing/?src=gh_mcp): median listed price per call in 30 categories, with offer and host counts. Data (CC BY 4.0): [x402-price-index](https://github.com/aiexp1/x402-price-index).
+- [x402 price comparisons](https://tanod.dev/pricing/?src=gh_mcp): median listed price per call in 30 categories, with offer and host counts. Data (CC BY 4.0): [x402-price-index](https://github.com/aiexp1/tanod-x402-price-index).
 
 ## Quick setup
 
