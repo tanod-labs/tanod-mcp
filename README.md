@@ -6,8 +6,8 @@
 One remote MCP server with **about 260 tools** (also split into 11 focused servers, below) for AI agents: `https://tanod.dev/mcp`.
 
 - **Connection:** streamable HTTP and stateless, with no API key, no account and no OAuth.
-- **Price:** free daily allowance per IP on every tool (applied automatically over MCP). Past that, pay per call in USDC on Base or Polygon with [x402](https://tanod.dev/learn/pay-per-call-api-x402.html) from an x402-capable client (the [Tanod SDKs](https://github.com/aiexp1/integrations) or any x402 library).
-- **Setup for 20 clients:** <https://tanod.dev/connect/>. Docs for agents: <https://tanod.dev/llms.txt>. OpenAPI: <https://tanod.dev/openapi.json>.
+- **Price:** free daily allowance per IP on every tool (applied automatically over MCP). Past that, pay per call in USDC on Base or Polygon with [x402](https://tanod.dev/learn/pay-per-call-api-x402.html?src=gh_mcp) from an x402-capable client (the [Tanod SDKs](https://github.com/aiexp1/integrations) or any x402 library).
+- **Setup for 20 clients:** <https://tanod.dev/connect/?src=gh_mcp>. Docs for agents: <https://tanod.dev/llms.txt>. OpenAPI: <https://tanod.dev/openapi.json>.
 
 ## Focused servers
 
@@ -29,7 +29,7 @@ Clients that work better with fewer tools can connect a focused server instead. 
 
 Four are also listed on Smithery: [security](https://smithery.ai/servers/tanod-labs/security-scans), [docs](https://smithery.ai/servers/tanod-labs/pdf-and-docs), [images](https://smithery.ai/servers/tanod-labs/image-tools), [web](https://smithery.ai/servers/tanod-labs/web-search-markdown-screenshots).
 
-Overview: <https://tanod.dev/mcp-servers/>. Pricing: <https://tanod.dev/pricing/>. Status: <https://tanod.dev/status>.
+Overview: <https://tanod.dev/mcp-servers/>. Pricing: <https://tanod.dev/pricing/?src=gh_mcp>. Status: <https://tanod.dev/status>.
 
 ## Tool families
 
@@ -54,20 +54,20 @@ Scans and checks are automated and heuristic, not an audit. Aviation data is not
 
 ## For agents paying x402 endpoints (free)
 
-- [How to check an x402 endpoint before your agent pays it](https://tanod.dev/learn/check-x402-endpoint-before-paying.html): decode the 402 quote, look for real buyers, check listing history, compare the price with the median, screen the payTo address, cap spend.
-- [What agents actually pay for over x402](https://tanod.dev/learn/x402-bazaar-agent-demand-data.html): 30-day payer and call counts from the CDP Bazaar.
+- [How to check an x402 endpoint before your agent pays it](https://tanod.dev/learn/check-x402-endpoint-before-paying.html?src=gh_mcp): decode the 402 quote, look for real buyers, check listing history, compare the price with the median, screen the payTo address, cap spend.
+- [What agents actually pay for over x402](https://tanod.dev/learn/x402-bazaar-agent-demand-data.html?src=gh_mcp): 30-day payer and call counts from the CDP Bazaar.
 
 ## For x402 sellers (free)
 
-- [x402 listing lint](https://tanod.dev/tools/x402-listing-lint/): paste your 402 response and check it against the CDP Bazaar listing rules (500-character description cap, "use when" sentence, schemas, networks). Runs in your browser; nothing is uploaded.
-- [State of the x402 Bazaar](https://tanod.dev/learn/state-of-x402-bazaar.html): listings, hosts, prices, networks and metadata quality from our daily index.
-- [Bazaar listing checklist](https://tanod.dev/learn/x402-bazaar-listing-checklist.html).
-- [x402 facilitator support](https://tanod.dev/learn/x402-facilitator-support.html): which schemes (exact, upto, batch-settlement) Coinbase CDP, PayAI, Dexter, Daydreams, x402.rs and x402.org settle on each of 11 mainnets, read from their `/supported` endpoints.
-- [Who pays new x402 listings](https://tanod.dev/learn/x402-explorer-wallets.html): on-chain data on a cohort of 124 wallets that sample new cheap listings, and how to read Bazaar payer counts.
-- [State of the MCP Registry](https://tanod.dev/learn/state-of-mcp-registry.html): daily counts for the official MCP Registry (41,606 servers): remote vs package, transports, npm/PyPI/OCI split, new servers per month, largest namespaces.
+- [x402 listing lint](https://tanod.dev/tools/x402-listing-lint/?src=gh_mcp): paste your 402 response and check it against the CDP Bazaar listing rules (500-character description cap, "use when" sentence, schemas, networks). Runs in your browser; nothing is uploaded.
+- [State of the x402 Bazaar](https://tanod.dev/learn/state-of-x402-bazaar.html?src=gh_mcp): listings, hosts, prices, networks and metadata quality from our daily index.
+- [Bazaar listing checklist](https://tanod.dev/learn/x402-bazaar-listing-checklist.html?src=gh_mcp).
+- [x402 facilitator support](https://tanod.dev/learn/x402-facilitator-support.html?src=gh_mcp): which schemes (exact, upto, batch-settlement) Coinbase CDP, PayAI, Dexter, Daydreams, x402.rs and x402.org settle on each of 11 mainnets, read from their `/supported` endpoints.
+- [Who pays new x402 listings](https://tanod.dev/learn/x402-explorer-wallets.html?src=gh_mcp): on-chain data on a cohort of 124 wallets that sample new cheap listings, and how to read Bazaar payer counts.
+- [State of the MCP Registry](https://tanod.dev/learn/state-of-mcp-registry.html?src=gh_mcp): daily counts for the official MCP Registry (41,606 servers): remote vs package, transports, npm/PyPI/OCI split, new servers per month, largest namespaces.
 - [tanod/mcp-registry-servers](https://huggingface.co/datasets/tanod/mcp-registry-servers) on Hugging Face: every server in the official MCP Registry, one row each (name, title, description, version, transports, remote URLs, package registries, repository), refreshed daily, CC BY 4.0.
-- [What agents pay for over x402](https://tanod.dev/learn/x402-bazaar-agent-demand-data.html): 30-day payer and call counts by endpoint and topic, and GET vs POST traction (31.5% vs 14.5% of endpoints with 3+ payers).
-- [x402 price comparisons](https://tanod.dev/pricing/): median listed price per call in 30 categories, with offer and host counts. Data (CC BY 4.0): [x402-price-index](https://github.com/aiexp1/x402-price-index).
+- [What agents pay for over x402](https://tanod.dev/learn/x402-bazaar-agent-demand-data.html?src=gh_mcp): 30-day payer and call counts by endpoint and topic, and GET vs POST traction (31.5% vs 14.5% of endpoints with 3+ payers).
+- [x402 price comparisons](https://tanod.dev/pricing/?src=gh_mcp): median listed price per call in 30 categories, with offer and host counts. Data (CC BY 4.0): [x402-price-index](https://github.com/aiexp1/x402-price-index).
 
 ## Quick setup
 
@@ -93,7 +93,7 @@ Claude Desktop / claude.ai: add a custom connector with the URL above and leave 
 
 Free document tools in claude.ai and ChatGPT: add `https://tanod.dev/mcp/docs` as a custom connector (40 PDF, OCR and Office tools). Calls from those apps share a free pool of 2,000 document calls a day; past that, the per-call price applies. Walkthrough: <https://dev.to/tanod/add-free-pdf-ocr-and-office-conversion-tools-to-claudeai-and-chatgpt-with-one-mcp-connector-5g43>.
 
-Other clients: <https://tanod.dev/connect/>.
+Other clients: <https://tanod.dev/connect/?src=gh_mcp>.
 
 ## Run locally (npx)
 
@@ -127,7 +127,7 @@ Development: `npm ci && npm test`. Source is in `src/`, tests in `test/`.
 
 ## About
 
-Tanod (<https://tanod.dev>) also runs free browser tools at <https://tanod.dev/tools/> and free network monitoring at <https://tanod.dev/monitor/>. Contact: ops@tanod.dev.
+Tanod (<https://tanod.dev?src=gh_mcp>) also runs free browser tools at <https://tanod.dev/tools/?src=gh_mcp> and free network monitoring at <https://tanod.dev/monitor/?src=gh_mcp>. Contact: ops@tanod.dev.
 
 This repository holds the public description and registry metadata of the hosted server. The server itself is hosted at tanod.dev.
 
@@ -154,6 +154,6 @@ curl -s -X POST https://tanod.dev/mcp/docs \
   -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
 ```
 
-Status codes one by one (404 on `/sse`, 406 Not Acceptable, 415, session 400s, 405 on GET, 402 price quotes, timeouts): https://tanod.dev/learn/mcp-server-connection-errors.html
+Status codes one by one (404 on `/sse`, 406 Not Acceptable, 415, session 400s, 405 on GET, 402 price quotes, timeouts): https://tanod.dev/learn/mcp-server-connection-errors.html?src=gh_mcp
 
-What shipped recently: https://tanod.dev/changelog/ (Atom feed: https://tanod.dev/changelog/feed.xml).
+What shipped recently: https://tanod.dev/changelog/?src=gh_mcp (Atom feed: https://tanod.dev/changelog/feed.xml).
