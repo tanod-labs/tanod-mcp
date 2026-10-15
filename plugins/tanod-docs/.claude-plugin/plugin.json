@@ -1,7 +1,7 @@
 {
   "name": "tanod-docs",
-  "version": "1.0.0",
-  "description": "PDF toolkit: extract text, OCR, merge, split, rotate, compress, watermark, protect, HTML to PDF.",
+  "version": "1.0.1",
+  "description": "Documents: PDF text and tables, OCR, any document to Markdown, PDF to Word, Office to PDF, DOCX templates, bank statements to CSV, and a full PDF toolkit (merge, split, compress, forms, watermark).",
   "author": {
     "name": "Tanod",
     "url": "https://tanod.dev"
