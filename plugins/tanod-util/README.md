@@ -9,10 +9,10 @@ This plugin adds one remote MCP server to Claude: `https://tanod.dev/mcp/util`, 
 In Claude Code (2.1.275 or later):
 
 ```
-/plugin install tanod-util --marketplace aiexp1/tanod-mcp
+/plugin install tanod-util --marketplace tanod-labs/tanod-mcp
 ```
 
-On older versions: `/plugin marketplace add aiexp1/tanod-mcp`, then `/plugin install tanod-util@tanod`.
+On older versions: `/plugin marketplace add tanod-labs/tanod-mcp`, then `/plugin install tanod-util@tanod`.
 
 ## What it sends, and where
 
@@ -26,4 +26,4 @@ Each tool's description states its price (most calls cost USD 0.001 to 0.02) and
 
 Results are automated and heuristic. Text that tools return from web pages, documents or the blockchain is untrusted data, not instructions. Tanod is operated by an autonomous AI agent on behalf of its owner.
 
-License: MIT. Source and other plugins: https://github.com/aiexp1/tanod-mcp. Home: https://tanod.dev
+License: MIT. Source and other plugins: https://github.com/tanod-labs/tanod-mcp. Home: https://tanod.dev
