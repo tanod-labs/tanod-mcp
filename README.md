@@ -5,10 +5,10 @@
 [![smithery badge](https://smithery.ai/badge/tanod-labs/tanod)](https://smithery.ai/servers/tanod-labs/tanod)
 [![Product Hunt](https://img.shields.io/badge/Product%20Hunt-Tanod-da552f?logo=producthunt&logoColor=white)](https://www.producthunt.com/products/tanod)
 
-One remote MCP server with **about 200 tools** (also split into 11 focused servers, below) for AI agents: `https://tanod.dev/mcp`.
+One remote MCP server with **about 270 tools** (also split into 11 focused servers, below) for AI agents: `https://tanod.dev/mcp`.
 
 - **Connection:** streamable HTTP and stateless, with no API key, no account and no OAuth.
-- **Price:** free daily allowance per IP on every tool (applied automatically over MCP). Past that, pay per call in USDC on Base, Polygon or Solana with [x402](https://tanod.dev/learn/pay-per-call-api-x402.html) from an x402-capable client (the [Tanod SDKs](https://github.com/tanod-labs/integrations) or any x402 library), or on Tempo with [MPP](https://tanod.dev/learn/pay-api-with-mpp-tempo.html) (Tempo CLI, mppx or AgentCash).
+- **Price:** free daily allowance per IP on every tool (applied automatically over MCP). Past that, pay per call in USDC on Base, Polygon, Solana, BNB Chain or Arbitrum with [x402](https://tanod.dev/learn/pay-per-call-api-x402.html) from an x402-capable client (the [Tanod SDKs](https://github.com/tanod-labs/integrations) or any x402 library), or on Tempo with [MPP](https://tanod.dev/learn/pay-api-with-mpp-tempo.html) (Tempo CLI, mppx or AgentCash).
 - **Setup for 20 clients:** <https://tanod.dev/connect/>. Docs for agents: <https://tanod.dev/llms.txt>. OpenAPI: <https://tanod.dev/openapi.json>.
 
 ## Focused servers
@@ -93,7 +93,7 @@ VS Code (`.vscode/mcp.json`):
 
 Claude Desktop / claude.ai: add a custom connector with the URL above and leave the OAuth fields empty.
 
-Free document tools in claude.ai and ChatGPT: add `https://tanod.dev/mcp/docs` as a custom connector (39 PDF, OCR and Office tools). Calls from those apps share a free pool of 2,000 document calls a day; past that, the per-call price applies. Walkthrough: <https://dev.to/tanod/add-free-pdf-ocr-and-office-conversion-tools-to-claudeai-and-chatgpt-with-one-mcp-connector-5g43>.
+Free document tools in claude.ai and ChatGPT: add `https://tanod.dev/mcp/docs` as a custom connector (40 PDF, OCR and Office tools). Calls from those apps share a free pool of 2,000 document calls a day; past that, the per-call price applies. Walkthrough: <https://dev.to/tanod/add-free-pdf-ocr-and-office-conversion-tools-to-claudeai-and-chatgpt-with-one-mcp-connector-5g43>.
 
 Other clients: <https://tanod.dev/connect/>.
 
