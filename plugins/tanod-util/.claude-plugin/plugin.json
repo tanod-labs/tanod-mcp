@@ -1,6 +1,6 @@
 {
   "name": "tanod-util",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Developer utilities: encode, hash, HMAC, IDs, JSON, data conversion, cron, time zones, QR codes.",
   "author": {
     "name": "Tanod",
@@ -13,5 +13,6 @@
     "mcp",
     "tanod",
     "util"
-  ]
+  ],
+  "privacyPolicyUrl": "https://tanod.dev/privacy/"
 }

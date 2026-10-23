@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "Tanod MCP servers for agents: one plugin per focused server (security, chain, sky, finance, docs, images, text, util, web, ml, agents) plus the all-in-one server. Hosted, no API key, free daily allowance, pay per call in USDC after that.",
-    "version": "1.0.0"
+    "version": "1.0.1"
   },
   "plugins": [
     {
       "name": "tanod",
       "source": "./plugins/tanod",
-      "description": "Every Tanod tool in one server: security checks, chain data, aviation and space, finance, documents and PDF, images, text, utilities, web and local ML. Pay per call in USDC over x402, or use the free daily allowance; no API key.",
-      "version": "1.0.1",
+      "description": "Every Tanod tool in one server: security checks, chain data, aviation and space, finance, documents and PDF, images, text, utilities, web and ML. Pay per call in USDC over x402, or use the free daily allowance; no API key.",
+      "version": "1.0.2",
       "category": "utility",
       "homepage": "https://tanod.dev/mcp-servers/"
     },
@@ -21,7 +21,7 @@
       "name": "tanod-agents",
       "source": "./plugins/tanod-agents",
       "description": "Index of x402 endpoints and MCP servers (query, history, export) and agent-package scans.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "utility",
       "homepage": "https://tanod.dev/mcp-servers/"
     },
@@ -29,15 +29,15 @@
       "name": "tanod-chain",
       "source": "./plugins/tanod-chain",
       "description": "Ethereum and Base reads: balances, tokens, prices, quotes, gas, blocks, transactions, ENS.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "utility",
       "homepage": "https://tanod.dev/mcp-servers/"
     },
     {
       "name": "tanod-docs",
       "source": "./plugins/tanod-docs",
-      "description": "Documents: PDF text and tables, OCR, any document to Markdown, PDF to Word, Office to PDF, DOCX templates, bank statements to CSV, and a full PDF toolkit (merge, split, compress, forms, watermark).",
-      "version": "1.1.0",
+      "description": "Documents: PDF text and tables, OCR, supported documents to Markdown, PDF to Word, Office to PDF, DOCX templates, bank statements to CSV, and a full PDF toolkit (merge, split, compress, forms, watermark).",
+      "version": "1.1.1",
       "category": "utility",
       "homepage": "https://tanod.dev/mcp-servers/"
     },
@@ -45,7 +45,7 @@
       "name": "tanod-finance",
       "source": "./plugins/tanod-finance",
       "description": "SEC EDGAR company data, US Treasury yields, ECB FX rates, token prices, IBAN/LEI/ISIN checks.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "utility",
       "homepage": "https://tanod.dev/mcp-servers/"
     },
@@ -53,15 +53,15 @@
       "name": "tanod-images",
       "source": "./plugins/tanod-images",
       "description": "Image toolkit: resize, convert, compress, crop, metadata, hashes, favicons, OCR, QR codes, barcodes.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "utility",
       "homepage": "https://tanod.dev/mcp-servers/"
     },
     {
       "name": "tanod-ml",
       "source": "./plugins/tanod-ml",
-      "description": "Local ML: text embeddings, reranking, similarity, named entities, zero-shot classification.",
-      "version": "1.0.0",
+      "description": "ML: text embeddings, reranking, similarity, named entities, zero-shot classification.",
+      "version": "1.0.1",
       "category": "utility",
       "homepage": "https://tanod.dev/mcp-servers/"
     },
@@ -69,7 +69,7 @@
       "name": "tanod-security",
       "source": "./plugins/tanod-security",
       "description": "Contract and agent-package scans, phishing URL and OFAC checks, domain and header checks.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "utility",
       "homepage": "https://tanod.dev/mcp-servers/"
     },
@@ -77,7 +77,7 @@
       "name": "tanod-sky",
       "source": "./plugins/tanod-sky",
       "description": "Aviation and space data: METAR/TAF, airports, space weather, aurora, asteroids, satellite passes.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "utility",
       "homepage": "https://tanod.dev/mcp-servers/"
     },
@@ -85,7 +85,7 @@
       "name": "tanod-text",
       "source": "./plugins/tanod-text",
       "description": "Text tools: stats, language, case, lines, replace, extract, keywords, summary, sentiment, diff.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "utility",
       "homepage": "https://tanod.dev/mcp-servers/"
     },
@@ -93,7 +93,7 @@
       "name": "tanod-util",
       "source": "./plugins/tanod-util",
       "description": "Developer utilities: encode, hash, HMAC, IDs, JSON, data conversion, cron, time zones, QR codes.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "utility",
       "homepage": "https://tanod.dev/mcp-servers/"
     },
@@ -101,7 +101,7 @@
       "name": "tanod-web",
       "source": "./plugins/tanod-web",
       "description": "Web tools: search, page to Markdown or screenshot, metadata, links, sitemaps, robots, RDAP, IP.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "utility",
       "homepage": "https://tanod.dev/mcp-servers/"
     }

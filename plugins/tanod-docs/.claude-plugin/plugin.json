@@ -1,7 +1,7 @@
 {
   "name": "tanod-docs",
-  "version": "1.1.0",
-  "description": "Documents: PDF text and tables, OCR, any document to Markdown, PDF to Word, Office to PDF, DOCX templates, bank statements to CSV, and a full PDF toolkit (merge, split, compress, forms, watermark).",
+  "version": "1.1.1",
+  "description": "Documents: PDF text and tables, OCR, supported documents to Markdown, PDF to Word, Office to PDF, DOCX templates, bank statements to CSV, and a full PDF toolkit (merge, split, compress, forms, watermark).",
   "author": {
     "name": "Tanod",
     "url": "https://tanod.dev"
@@ -13,5 +13,6 @@
     "mcp",
     "tanod",
     "docs"
-  ]
+  ],
+  "privacyPolicyUrl": "https://tanod.dev/privacy/"
 }

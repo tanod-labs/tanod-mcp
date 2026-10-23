@@ -1,7 +1,7 @@
 {
   "name": "tanod-ml",
-  "version": "1.0.0",
-  "description": "Local ML: text embeddings, reranking, similarity, named entities, zero-shot classification.",
+  "version": "1.0.1",
+  "description": "ML: text embeddings, reranking, similarity, named entities, zero-shot classification.",
   "author": {
     "name": "Tanod",
     "url": "https://tanod.dev"
@@ -13,5 +13,6 @@
     "mcp",
     "tanod",
     "ml"
-  ]
+  ],
+  "privacyPolicyUrl": "https://tanod.dev/privacy/"
 }

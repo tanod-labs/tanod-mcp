@@ -1,6 +1,6 @@
 {
   "name": "tanod-web",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Web tools: search, page to Markdown or screenshot, metadata, links, sitemaps, robots, RDAP, IP.",
   "author": {
     "name": "Tanod",
@@ -13,5 +13,6 @@
     "mcp",
     "tanod",
     "web"
-  ]
+  ],
+  "privacyPolicyUrl": "https://tanod.dev/privacy/"
 }

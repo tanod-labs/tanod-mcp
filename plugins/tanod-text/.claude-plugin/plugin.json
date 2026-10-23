@@ -1,6 +1,6 @@
 {
   "name": "tanod-text",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Text tools: stats, language, case, lines, replace, extract, keywords, summary, sentiment, diff.",
   "author": {
     "name": "Tanod",
@@ -13,5 +13,6 @@
     "mcp",
     "tanod",
     "text"
-  ]
+  ],
+  "privacyPolicyUrl": "https://tanod.dev/privacy/"
 }
