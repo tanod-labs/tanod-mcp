@@ -69,7 +69,7 @@ For clients that use `servers`, such as VS Code:
 { "servers": { "tanod": { "type": "http", "url": "https://tanod.dev/mcp" } } }
 ```
 
-For custom-connector clients, use the full URL or a focused URL and leave OAuth fields empty. Available tools and payment support depend on the client. Document tools do not all have a free allowance: bank-statement conversion, document comparison, PDF OCR, PDF-to-Word and document-to-Markdown require payment.
+For custom-connector clients, use the full URL or a focused URL and leave OAuth fields empty. Available tools and payment support depend on the client. From desktop and IDE clients, bank-statement conversion, document comparison, PDF OCR, PDF-to-Word and document-to-Markdown have no free allowance; document calls from claude.ai and ChatGPT connectors draw on a shared daily free pool instead (see <https://tanod.dev/connect/>).
 
 Other clients: <https://tanod.dev/connect/>.
 
