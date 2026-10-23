@@ -2,7 +2,7 @@
 
 Aviation and space data: METAR/TAF, airports, space weather, aurora, asteroids, satellite passes.
 
-This plugin adds one remote MCP server to Claude: `https://tanod.dev/mcp/sky`, operated by Tanod. The plugin has no local server executable; it contains only this README, its manifest and the server address.
+This plugin adds one remote MCP server to Claude: `https://tanod.dev/mcp/sky`, operated by Tanod. The plugin has no local server executable; it contains only this README, its manifest, a brand icon and the server address.
 
 ## Install
 

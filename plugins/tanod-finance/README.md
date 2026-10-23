@@ -2,7 +2,7 @@
 
 SEC EDGAR company data, US Treasury yields, ECB FX rates, token prices, IBAN/LEI/ISIN checks.
 
-This plugin adds one remote MCP server to Claude: `https://tanod.dev/mcp/finance`, operated by Tanod. The plugin has no local server executable; it contains only this README, its manifest and the server address.
+This plugin adds one remote MCP server to Claude: `https://tanod.dev/mcp/finance`, operated by Tanod. The plugin has no local server executable; it contains only this README, its manifest, a brand icon and the server address.
 
 ## Install
 

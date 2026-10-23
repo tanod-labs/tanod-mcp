@@ -1,8 +1,8 @@
 # Tanod (all tools)
 
-Every Tanod tool in one server: security checks, chain data, aviation and space, finance, documents and PDF, images, text, utilities, web and ML. Pay per call in USDC over x402, or use the free daily allowance; no API key.
+Every Tanod tool in one server: security checks, chain data, aviation and space, finance, documents and PDF, images, text, utilities, web and ML. Pay per call in USDC over x402; eligible tools have a free daily allowance; no API key.
 
-This plugin adds one remote MCP server to Claude: `https://tanod.dev/mcp`, operated by Tanod. The plugin has no local server executable; it contains only this README, its manifest and the server address.
+This plugin adds one remote MCP server to Claude: `https://tanod.dev/mcp`, operated by Tanod. The plugin has no local server executable; it contains only this README, its manifest, a brand icon and the server address.
 
 ## Install
 

@@ -1,7 +1,7 @@
 {
   "name": "tanod",
   "version": "1.0.2",
-  "description": "Every Tanod tool in one server: security checks, chain data, aviation and space, finance, documents and PDF, images, text, utilities, web and ML. Pay per call in USDC over x402, or use the free daily allowance; no API key.",
+  "description": "Every Tanod tool in one server: security checks, chain data, aviation and space, finance, documents and PDF, images, text, utilities, web and ML. Pay per call in USDC over x402; eligible tools have a free daily allowance; no API key.",
   "author": {
     "name": "Tanod",
     "url": "https://tanod.dev"
