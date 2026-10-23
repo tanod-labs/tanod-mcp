@@ -2,7 +2,7 @@
 
 Image toolkit: resize, convert, compress, crop, metadata, hashes, favicons, OCR, QR codes, barcodes.
 
-This plugin adds one remote MCP server to Claude: `https://tanod.dev/mcp/images`, operated by Tanod. The plugin has no local server executable; it contains only this README, its manifest, a brand icon and the server address.
+This plugin adds one remote MCP server to Claude: `https://tanod.dev/mcp/images`, operated by Tanod. The plugin has no local server executable; it contains this README, its manifest, a brand icon, license and security-policy files, and the server address.
 
 ## Install
 

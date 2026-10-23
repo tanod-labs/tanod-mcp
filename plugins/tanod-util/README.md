@@ -2,7 +2,7 @@
 
 Developer utilities: encode, hash, HMAC, IDs, JSON, data conversion, cron, time zones, QR codes.
 
-This plugin adds one remote MCP server to Claude: `https://tanod.dev/mcp/util`, operated by Tanod. The plugin has no local server executable; it contains only this README, its manifest, a brand icon and the server address.
+This plugin adds one remote MCP server to Claude: `https://tanod.dev/mcp/util`, operated by Tanod. The plugin has no local server executable; it contains this README, its manifest, a brand icon, license and security-policy files, and the server address.
 
 ## Install
 

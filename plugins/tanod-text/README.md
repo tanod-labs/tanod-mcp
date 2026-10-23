@@ -2,7 +2,7 @@
 
 Text tools: stats, language, case, lines, replace, extract, keywords, summary, sentiment, diff.
 
-This plugin adds one remote MCP server to Claude: `https://tanod.dev/mcp/text`, operated by Tanod. The plugin has no local server executable; it contains only this README, its manifest, a brand icon and the server address.
+This plugin adds one remote MCP server to Claude: `https://tanod.dev/mcp/text`, operated by Tanod. The plugin has no local server executable; it contains this README, its manifest, a brand icon, license and security-policy files, and the server address.
 
 ## Install
 
