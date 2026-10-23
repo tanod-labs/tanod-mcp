@@ -8,7 +8,7 @@
 One hosted MCP server for AI agents, also available as focused servers: `https://tanod.dev/mcp`.
 
 - **Connection:** stateless Streamable HTTP. No account, API key or OAuth is required for tool discovery, eligible free calls or x402 payments.
-- **Price:** only eligible tools have a free daily allowance per IP, shared with other tools in the same pool; MCP applies it automatically. Other calls require payment. Prices and allowances come from each operation's `x-tanod-pricing` in [OpenAPI](https://tanod.dev/openapi.json). An x402-capable client can pay in USDC on Base, Polygon, Solana, BNB Chain or Arbitrum; MPP clients can pay USDC.e on Tempo with the Tempo CLI, mppx or AgentCash. Check the quote and approve the cost before paying. See the [Tanod SDKs](https://github.com/tanod-labs/tanod-integrations), the [x402 guide](https://tanod.dev/learn/pay-per-call-api-x402.html) and the [MPP guide](https://tanod.dev/learn/pay-api-with-mpp-tempo.html).
+- **Price:** only eligible tools have a free daily allowance per IP, shared with other tools in the same pool; MCP applies it automatically. Other calls require payment. Prices and allowances come from each operation's `x-tanod-pricing` in [OpenAPI](https://tanod.dev/openapi.json). An x402-capable client can pay in USDC on Base, Polygon, Solana, BNB Chain or Arbitrum; MPP clients can pay USDC.e on Tempo with the Tempo CLI, mppx or AgentCash. Check the quote and approve the cost before paying. See the [Tanod SDKs](https://github.com/tanod-labs/integrations), the [x402 guide](https://tanod.dev/learn/pay-per-call-api-x402.html) and the [MPP guide](https://tanod.dev/learn/pay-api-with-mpp-tempo.html).
 - **Setup:** <https://tanod.dev/connect/>. Docs for agents: <https://tanod.dev/llms.txt>. OpenAPI: <https://tanod.dev/openapi.json>.
 
 ## Focused servers
@@ -47,7 +47,7 @@ The market figures below were added to this README on 2026-10-10; they are histo
 - [State of the MCP Registry](https://tanod.dev/learn/state-of-mcp-registry.html): a published snapshot of 41,606 servers (2026-10-10).
 - [tanod/mcp-registry-servers](https://huggingface.co/datasets/tanod/mcp-registry-servers): MCP Registry metadata on Hugging Face, CC BY 4.0.
 - [What agents pay for over x402](https://tanod.dev/learn/x402-bazaar-agent-demand-data.html): GET vs POST endpoints with 3+ payers, 31.5% vs 14.5% (2026-10-10).
-- [x402 price comparisons](https://tanod.dev/pricing/): published prices across 30 categories (2026-10-10). Data (CC BY 4.0): [x402-price-index](https://github.com/tanod-labs/tanod-x402-price-index).
+- [x402 price comparisons](https://tanod.dev/pricing/): published prices across 30 categories (2026-10-10). Data (CC BY 4.0): [x402-price-index](https://github.com/tanod-labs/x402-price-index).
 
 ## Quick setup
 

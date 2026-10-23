@@ -9,7 +9,7 @@ metadata:
 
 # Convert and OCR documents
 
-Hosted PDF and document tools that need nothing installed: send the file, get the result. Pay per call in USDC over x402 (fractions of a cent to a cent), or use the MCP server where your client pays. No API key.
+Hosted PDF and document tools that need nothing installed: send the file, get the result. Pay per call in USDC over x402 (fractions of a cent to two cents), or use the MCP server where your client pays. No API key.
 
 ## When to use
 
@@ -19,7 +19,7 @@ Hosted PDF and document tools that need nothing installed: send the file, get th
 ## Access
 
 - MCP (preferred): `https://tanod.dev/mcp/docs` (Streamable HTTP). Tools: `extract_pdf`, `pdf_ocr`, `ocr_image`, `pdf_merge`, `pdf_split`, `pdf_extract_pages`, `pdf_remove_pages`, `pdf_rotate`, `pdf_compress`, `pdf_to_images`, `images_to_pdf`, `pdf_watermark`, `pdf_page_numbers`, `pdf_protect`, `pdf_unlock`, `pdf_metadata`, `html_to_pdf`, `convert_document_to_markdown`, `convert_pdf_to_word`. In Claude Code: `/plugin marketplace add tanod-labs/tanod-mcp` then `/plugin install tanod-docs@tanod`.
-- HTTP: `POST https://tanod.dev/v1/pdf/...` with the file as multipart or base64 (see https://tanod.dev/openapi.json for each route's body). Without payment the response is a 402 whose body states the price; an x402 client pays and retries.
+- HTTP: `POST https://tanod.dev/v1/pdf/...` with a public file URL or base64 in JSON (see https://tanod.dev/openapi.json for each route's body; these document routes do not accept multipart uploads). Without payment the response is a 402 whose body states the price; check the quote and obtain approval before an x402 client pays and retries.
 
 ## Routes and prices
 

@@ -2,7 +2,7 @@
 
 Documents: PDF text and tables, OCR, supported documents to Markdown, PDF to Word, Office to PDF, DOCX templates, bank statements to CSV, and a full PDF toolkit (merge, split, compress, forms, watermark).
 
-This plugin adds one remote MCP server to Claude: `https://tanod.dev/mcp/docs`, operated by Tanod. The plugin has no local server executable; it contains this README, its manifest, a brand icon and the server address, plus four skill files (instructions).
+This plugin adds one remote MCP server to Claude: `https://tanod.dev/mcp/docs`, operated by Tanod. The plugin has no local server executable; it contains this README, its manifest, a brand icon, license and security-policy files, and the server address, plus four skill files (instructions).
 
 ## Install
 
