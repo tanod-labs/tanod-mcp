@@ -1,6 +1,6 @@
 {
   "name": "tanod-security",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Contract and agent-package scans, phishing URL and OFAC checks, domain and header checks.",
   "author": {
     "name": "Tanod",
@@ -13,5 +13,6 @@
     "mcp",
     "tanod",
     "security"
-  ]
+  ],
+  "privacyPolicyUrl": "https://tanod.dev/privacy/"
 }

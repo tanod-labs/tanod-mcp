@@ -29,13 +29,13 @@ Hosted PDF and document tools that need nothing installed: send the file, get th
 | `POST /v1/pdf/to-docx` | PDF to Word (DOCX) via LibreOffice; up to 50 pages per call; fidelity varies, links not kept | USD 0.01 |
 | `POST /v1/docs/to-pdf` | Word, Excel and PowerPoint (DOCX, XLSX, PPTX, ODT, ODS, ODP, RTF, DOC, XLS, PPT) to PDF via LibreOffice; macros never run, unsafe links removed; MCP tool `convert_office_to_pdf` | USD 0.01 |
 | `POST /v1/pdf/tables` | Every table in a text PDF as rows (JSON, CSV or XLSX); MCP tool `extract_pdf_tables` | USD 0.01 |
-| `POST /v1/pdf/bank-statement` | Bank statement PDF to transactions (date, description, amount, balance), each row reconciled against the running balance, with a confidence score; CSV, XLSX, JSON, OFX or QIF; MCP tool `convert_bank_statement` | USD 0.02 |
-| `POST /v1/ocr` | Extract the text in an image at a URL with OCR | USD 0.01 |
+| `POST /v1/pdf/bank-statement` | Bank statement PDF to transactions (date, description, amount, balance), with running-balance checks where possible and a confidence score; CSV, XLSX, JSON, OFX or QIF; MCP tool `convert_bank_statement` | USD 0.01 |
+| `POST /v1/ocr` | Extract the text in an image at a URL with OCR | USD 0.0025 |
 | `POST /v1/pdf` | Extract the text and metadata of a PDF at a URL | USD 0.005 |
 | `POST /v1/pdf/compress` | Compress a PDF to shrink its file size | USD 0.01 |
 | `POST /v1/pdf/extract-pages` | Extract pages from a PDF | USD 0.005 |
 | `POST /v1/pdf/from-images` | Convert 1-30 images | USD 0.005 |
-| `POST /v1/pdf/html-to-pdf` | Convert a web page URL to PDF | USD 0.01 |
+| `POST /v1/pdf/html-to-pdf` | Convert a web page URL to PDF | USD 0.0045 |
 | `POST /v1/pdf/merge` | Merge 2-20 PDFs | USD 0.005 |
 | `POST /v1/pdf/metadata` | Read, edit or strip the metadata of a PDF | USD 0.005 |
 | `POST /v1/pdf/page-numbers` | Add page numbers to a PDF | USD 0.005 |
@@ -46,7 +46,7 @@ Hosted PDF and document tools that need nothing installed: send the file, get th
 | `POST /v1/pdf/unlock` | Unlock a password-protected PDF | USD 0.005 |
 | `POST /v1/pdf/watermark` | Add a text watermark to a PDF | USD 0.005 |
 
-Light structural operations have a small free daily allowance with the header `X-Tanod-Free: 1`; OCR, compress and rendering do not (they drive heavy workers).
+Prices and allowances are listed per operation in https://tanod.dev/openapi.json. Eligible structural PDF operations share 3 free calls per IP per day. Image OCR shares a pool of 5 eligible static-render calls; PDF OCR, bank statements, document conversion, compression and PDF/image rendering have no free allowance. MCP applies eligible allowance automatically; unpaid HTTP calls request it with `X-Tanod-Free: 1`. Confirm the quote before paying.
 
 ## Reading results
 

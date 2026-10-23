@@ -9,7 +9,7 @@ metadata:
 
 # Bank statement PDF (Tanod Documents)
 
-`POST /v1/pdf/bank-statement` parses a text bank statement PDF into transactions and checks every row against the running balance. Price: USD 0.02 per call. Free allowance: none (bank statements are never free).
+`POST /v1/pdf/bank-statement` parses a text bank statement PDF into transactions and checks rows against the running balance where possible. Rows without enough balance information may be unchecked; do not describe them as reconciled. Price: USD 0.01 per call. Free allowance: none (bank statements are never free).
 
 ## Use when
 
@@ -57,4 +57,4 @@ An unpaid request returns HTTP 402 with an x402 v2 challenge (USDC on Base, Poly
 - Text PDFs only; no transaction table is a 422 no_transactions_found.
 - OFX and QIF need a full date on every row (else 422 dates_incomplete).
 - Header words are recognised in English, German, Spanish, French, Hindi, Indonesian, Italian, Polish, Portuguese, Russian, Turkish and Vietnamese.
-- Tanod does not log or store the statement.
+- Files and arguments are sent to Tanod. Review https://tanod.dev/privacy/ before sending sensitive material: request and usage logs are kept, generated download-link files are stored for 24 hours, and payment-ID retries may cache paid answers for up to 1 hour.

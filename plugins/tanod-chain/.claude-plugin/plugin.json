@@ -1,6 +1,6 @@
 {
   "name": "tanod-chain",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ethereum and Base reads: balances, tokens, prices, quotes, gas, blocks, transactions, ENS.",
   "author": {
     "name": "Tanod",
@@ -13,5 +13,6 @@
     "mcp",
     "tanod",
     "chain"
-  ]
+  ],
+  "privacyPolicyUrl": "https://tanod.dev/privacy/"
 }

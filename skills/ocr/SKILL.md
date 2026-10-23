@@ -9,7 +9,7 @@ metadata:
 
 # OCR (Tanod Documents)
 
-`POST /v1/ocr` reads text from an image URL; `POST /v1/pdf/ocr` adds a text layer to a scanned PDF. Price: `/v1/ocr` USD 0.01 per call, with 5 free static renders per IP per UTC day (one pool shared with PDF text, page metadata, security headers, robots.txt, sitemaps and page links); `/v1/pdf/ocr` USD 0.01 for at most 5 pages, USD 0.02 for 6-10 pages, no free allowance.
+`POST /v1/ocr` reads text from an image URL; `POST /v1/pdf/ocr` adds a text layer to a scanned PDF. Price: `/v1/ocr` USD 0.0025 per call, with 5 free eligible static renders per IP per UTC day (one pool shared with PDF text, page metadata, security headers, robots.txt, sitemaps and page links); `/v1/pdf/ocr` USD 0.01 for at most 5 pages, USD 0.02 for 6-10 pages, no free allowance.
 
 ## Use when
 

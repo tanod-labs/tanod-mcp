@@ -1,6 +1,6 @@
 {
   "name": "tanod-finance",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SEC EDGAR company data, US Treasury yields, ECB FX rates, token prices, IBAN/LEI/ISIN checks.",
   "author": {
     "name": "Tanod",
@@ -13,5 +13,6 @@
     "mcp",
     "tanod",
     "finance"
-  ]
+  ],
+  "privacyPolicyUrl": "https://tanod.dev/privacy/"
 }

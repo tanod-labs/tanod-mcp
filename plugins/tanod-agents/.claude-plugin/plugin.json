@@ -1,6 +1,6 @@
 {
   "name": "tanod-agents",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Index of x402 endpoints and MCP servers (query, history, export) and agent-package scans.",
   "author": {
     "name": "Tanod",
@@ -13,5 +13,6 @@
     "mcp",
     "tanod",
     "agents"
-  ]
+  ],
+  "privacyPolicyUrl": "https://tanod.dev/privacy/"
 }

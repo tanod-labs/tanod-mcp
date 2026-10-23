@@ -1,6 +1,6 @@
 {
   "name": "tanod-sky",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Aviation and space data: METAR/TAF, airports, space weather, aurora, asteroids, satellite passes.",
   "author": {
     "name": "Tanod",
@@ -13,5 +13,6 @@
     "mcp",
     "tanod",
     "sky"
-  ]
+  ],
+  "privacyPolicyUrl": "https://tanod.dev/privacy/"
 }

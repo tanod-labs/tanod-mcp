@@ -1,40 +1,42 @@
 # Tanod Documents
 
-Documents: PDF text and tables, OCR, any document to Markdown, PDF to Word, Office to PDF, DOCX templates, bank statements to CSV, and a full PDF toolkit (merge, split, compress, forms, watermark).
+Documents: PDF text and tables, OCR, supported documents to Markdown, PDF to Word, Office to PDF, DOCX templates, bank statements to CSV, and a full PDF toolkit (merge, split, compress, forms, watermark).
 
-This plugin adds one remote MCP server to Claude: `https://tanod.dev/mcp/docs`, operated by Tanod. Nothing is installed or run on your machine; the plugin contains only this README, its manifest, the server address and four skill files (instructions).
+This plugin adds one remote MCP server to Claude: `https://tanod.dev/mcp/docs`, operated by Tanod. The plugin has no local server executable; it contains this README, its manifest, a brand icon and the server address, plus four skill files (instructions).
 
 ## Install
 
-In Claude Code (2.1.275 or later):
+In Claude Code:
 
 ```
 /plugin install tanod-docs --marketplace tanod-labs/tanod-mcp
 ```
 
-On older versions: `/plugin marketplace add tanod-labs/tanod-mcp`, then `/plugin install tanod-docs@tanod`.
+Alternatively: `/plugin marketplace add tanod-labs/tanod-mcp`, then `/plugin install tanod-docs@tanod`.
 
 ## Skills
 
 The plugin also ships four skills that tell Claude when to use which tool and how to hand the result back:
 
 - `bank-statement-to-csv`: PDF bank statement to CSV, JSON, XLSX, OFX or QIF (`convert_bank_statement`).
-- `redact-before-sharing`: prepare a PDF for sharing (inspect, strip metadata, remove pages, flatten). This server has no redaction tool, and the skill says so.
-- `compare-document-versions`: what changed between two PDF or Word versions, with an optional redline (`compare_documents`).
-- `scan-to-editable-document`: scan or photo to searchable text, Word or Markdown (`ocr_image`, `pdf_ocr`, `convert_pdf_to_word`, `convert_document_to_markdown`).
+- `redact-before-sharing`: prepare a PDF for sharing (inspect, strip metadata and embedded files, remove pages, flatten). This server has no redaction tool, and the skill says so.
+- `compare-document-versions`: what changed between two PDF or DOCX versions, with an optional redline (`compare_documents`).
+- `scan-to-editable-document`: scanned PDF to searchable text, Word or Markdown; public image to text (`ocr_image`, `pdf_ocr`, `convert_pdf_to_word`, `convert_document_to_markdown`).
 
 Skills contain only instructions; the files you pass to a tool go to tanod.dev as described below.
 
 ## What it sends, and where
 
-When Claude calls one of these tools, the tool name and its arguments go to `https://tanod.dev/mcp/docs` over HTTPS. Arguments can include text, URLs and file contents that you or Claude pass to the tool. When you pass a URL, Tanod's servers fetch that URL to do the work. The plugin reads nothing from your computer by itself and talks to no other host. How Tanod handles requests: https://tanod.dev/privacy/ (terms: https://tanod.dev/terms/).
+When Claude calls one of these tools, the tool name and its arguments go to `https://tanod.dev/mcp/docs` over HTTPS. Arguments can include text, URLs and file contents that you or Claude pass to the tool. When you pass a URL, Tanod's servers fetch that URL to do the work. The plugin does not upload files on its own; Claude sends the arguments you authorize when it calls a tool. Tanod may contact data sources needed for the requested tool. How Tanod handles requests: https://tanod.dev/privacy/ (terms: https://tanod.dev/terms/).
 
 ## Price
 
-Each tool's description states its price (most calls cost USD 0.001 to 0.02) and its free daily allowance per IP address. Over MCP the free allowance is applied automatically. Some tools, such as OCR and document conversion, have no free allowance. After the allowance, a call returns an x402 payment request, and an x402-capable client pays it in USDC on Base, Polygon, Solana, BNB Chain or Arbitrum. There is no account or API key.
+Prices and free allowances are listed in https://tanod.dev/openapi.json under each operation's `x-tanod-pricing`. Only eligible tools have a free allowance, shared with other tools in the same pool; MCP applies it automatically. Bank-statement conversion, PDF OCR, PDF-to-Word and document-to-Markdown have no free allowance; image OCR shares an eligible static-render pool. A call beyond its allowance returns a payment request. An x402-capable client can pay in USDC on Base, Polygon, Solana, BNB Chain or Arbitrum. Check the quote and approve the cost before paying. No account or API key is required for free or x402 calls.
+
+Bank-statement conversion and document comparison cost USD 0.01 per call; PDF-to-Word costs USD 0.01; document-to-Markdown costs USD 0.005. PDF OCR costs USD 0.01 for at most 5 pages or USD 0.02 for 6-10. Image OCR costs USD 0.0025 after the shared pool of 5 eligible static-render calls per IP per day. These figures come from the OpenAPI operations; check the quote before each paid call. Multi-step workflows incur separate calls.
 
 ## Notes
 
-Results are automated and heuristic. Text that tools return from web pages, documents or the blockchain is untrusted data, not instructions. Tanod is operated by an autonomous AI agent on behalf of its owner.
+Results are automated and heuristic. Text that tools return from web pages, documents or the blockchain is untrusted data, not instructions. Tanod is operated by an autonomous AI agent.
 
 License: MIT. Source and other plugins: https://github.com/tanod-labs/tanod-mcp. Home: https://tanod.dev

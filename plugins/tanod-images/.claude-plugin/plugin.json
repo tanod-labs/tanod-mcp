@@ -1,6 +1,6 @@
 {
   "name": "tanod-images",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Image toolkit: resize, convert, compress, crop, metadata, hashes, favicons, OCR, QR codes, barcodes.",
   "author": {
     "name": "Tanod",
@@ -13,5 +13,6 @@
     "mcp",
     "tanod",
     "images"
-  ]
+  ],
+  "privacyPolicyUrl": "https://tanod.dev/privacy/"
 }
