@@ -5,14 +5,14 @@
     "url": "https://tanod.dev"
   },
   "metadata": {
-    "description": "Tanod MCP servers for agents: one plugin per focused server (security, chain, sky, finance, docs, images, text, util, web, ml, agents) plus the all-in-one server. Hosted, no API key, free daily allowance, pay per call in USDC after that.",
+    "description": "Tanod MCP servers for agents: one plugin per focused server (security, chain, sky, finance, docs, images, text, util, web, ml, agents) plus the all-in-one server. Hosted, no API key; free daily allowance on eligible tools, otherwise pay per call in USDC.",
     "version": "1.0.1"
   },
   "plugins": [
     {
       "name": "tanod",
       "source": "./plugins/tanod",
-      "description": "Every Tanod tool in one server: security checks, chain data, aviation and space, finance, documents and PDF, images, text, utilities, web and ML. Pay per call in USDC over x402, or use the free daily allowance; no API key.",
+      "description": "Every Tanod tool in one server: security checks, chain data, aviation and space, finance, documents and PDF, images, text, utilities, web and ML. Pay per call in USDC over x402; eligible tools have a free daily allowance; no API key.",
       "version": "1.0.2",
       "category": "utility",
       "homepage": "https://tanod.dev/mcp-servers/"
