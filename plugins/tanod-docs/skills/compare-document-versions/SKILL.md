@@ -1,6 +1,6 @@
 ---
 name: compare-document-versions
-description: Compare two versions of a PDF or Word document and report what changed, with an optional redline file, using the Tanod compare_documents tool. Use when the user has an old and a new draft, contract, policy or report and wants the differences.
+description: Compare two versions of a PDF or DOCX document and report what changed, with an optional redline file, using the Tanod compare_documents tool. Use when the user has an old and a new draft, contract, policy or report and wants the differences.
 ---
 
 # Compare two versions of a document

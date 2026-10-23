@@ -1,6 +1,6 @@
 ---
 name: scan-to-editable-document
-description: Turn a scanned PDF or a photo of a page into searchable text, Markdown or an editable Word file with the Tanod pdf_ocr, ocr_image, convert_pdf_to_word and convert_document_to_markdown tools. Use when the user has a scan or picture and wants to edit, copy or search it.
+description: Convert scanned PDFs to searchable PDF, text, Markdown or Word, and public images to text, with Tanod pdf_ocr, ocr_image, convert_pdf_to_word and convert_document_to_markdown. Use when the user has a scan or picture and wants to edit, copy or search it.
 ---
 
 # Scan or photo to an editable Word or Markdown file
