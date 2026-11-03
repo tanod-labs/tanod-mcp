@@ -3,7 +3,7 @@ import { homedir } from "node:os";
 import { join } from "node:path";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { SpendCaps, parseUsdEnv } from "./caps.js";
-import { createProxy, DEFAULT_URL } from "./proxy.js";
+import { checkEndpointUrl, createProxy, DEFAULT_URL } from "./proxy.js";
 
 async function main(): Promise<void> {
   const env = process.env;
@@ -19,7 +19,10 @@ async function main(): Promise<void> {
     stateFile: env.TANOD_STATE_FILE === "off" ? undefined : env.TANOD_STATE_FILE || join(homedir(), ".tanod-mcp", "spend.json"),
   });
   const url = env.TANOD_MCP_URL || DEFAULT_URL;
-  const proxy = await createProxy({ url, privateKey, caps, log: (m) => console.error(`tanod-mcp: ${m}`) });
+  checkEndpointUrl(url, "TANOD_MCP_URL"); // https only (loopback http for testing): payment authorizations travel here.
+  const rpcUrl = env.TANOD_BASE_RPC_URL?.trim() || undefined; // May embed a provider API key: never logged.
+  if (rpcUrl) checkEndpointUrl(rpcUrl, "TANOD_BASE_RPC_URL");
+  const proxy = await createProxy({ url, privateKey, caps, rpcUrl, log: (m) => console.error(`tanod-mcp: ${m}`) });
   await proxy.server.connect(new StdioServerTransport());
   console.error(`tanod-mcp: connected to ${url}; ${privateKey ? "payments enabled (capped)" : "free tier only (no TANOD_PRIVATE_KEY)"}`);
   const stop = () => proxy.close().finally(() => process.exit(0));
