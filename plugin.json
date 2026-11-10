@@ -1,4 +1,5 @@
 {
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "tanod",
   "version": "1.0.2",
   "description": "Hosted MCP tools for agents: PDF, Office and image conversion, OCR, phishing and OFAC checks, contract and package scans, chain data, web screenshots and more. No key, no account; some tools have a free daily allowance, other calls are paid per call in USDC (x402).",
