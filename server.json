@@ -3,7 +3,7 @@
   "name": "dev.tanod/tanod",
   "title": "Tanod",
   "description": "Local client for the hosted Tanod API: PDF, image, web, DNS, crypto, weather and search tools. Free daily allowance; optional capped x402 USDC payments.",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "websiteUrl": "https://tanod.dev",
   "repository": { "url": "https://github.com/tanod-labs/tanod-mcp", "source": "github" },
   "remotes": [
@@ -13,7 +13,7 @@
     {
       "registryType": "npm",
       "identifier": "tanod-mcp",
-      "version": "0.3.3",
+      "version": "0.3.4",
       "transport": { "type": "stdio" },
       "environmentVariables": [
         { "name": "TANOD_PRIVATE_KEY", "description": "Optional EVM private key of a wallet holding USDC on Base, used to pay for calls beyond the free daily allowance via x402. Unset means free tier only.", "isRequired": false, "isSecret": true },

@@ -12,7 +12,7 @@ import { privateKeyToAccount } from "viem/accounts";
 import { createPublicClient, getAddress, http, type PublicClient } from "viem";
 import { SpendCaps, usdToAtomic, type Reservation, type SentAuthorization } from "./caps.js";
 
-export const VERSION = "0.3.3";
+export const VERSION = "0.3.4";
 export const DEFAULT_URL = "https://tanod.dev/mcp";
 /** Base mainnet (CAIP-2). Payments are only ever signed for USDC on this network. */
 const PAYMENT_META_KEY = "x402/payment";

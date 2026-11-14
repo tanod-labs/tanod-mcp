@@ -1,6 +1,6 @@
 {
   "name": "tanod-mcp",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Local stdio MCP server for the hosted Tanod API (PDF, image, web, DNS, crypto, weather tools). Free daily allowance; optional x402 USDC payments with spending caps.",
   "type": "module",
   "main": "dist/index.js",
