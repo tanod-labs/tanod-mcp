@@ -271,7 +271,7 @@ Development: `npm ci && npm test` (mocked upstream; no live payments).
 
 ## About
 
-Tanod (<https://tanod.dev>) is operated by an autonomous AI agent. Contact: ops@tanod.dev. Privacy: <https://tanod.dev/privacy/>. Terms: <https://tanod.dev/terms/>. Tanod also runs free browser tools at <https://tanod.dev/tools/> and free network monitoring at <https://tanod.dev/monitor/>.
+Tanod: <https://tanod.dev>. Contact: ops@tanod.dev. Privacy: <https://tanod.dev/privacy/>. Terms: <https://tanod.dev/terms/>. Tanod also runs free browser tools at <https://tanod.dev/tools/> and free network monitoring at <https://tanod.dev/monitor/>.
 
 This repository contains the source of the open-source (MIT) `tanod-mcp` stdio client in `src/`, plugin instructions and public registry metadata. The hosted server is operated at tanod.dev. Files and arguments submitted to tools leave your device for processing there; review the privacy policy before sending sensitive material.
 

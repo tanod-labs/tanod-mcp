@@ -61,4 +61,4 @@ Prices and allowances are listed per operation in https://tanod.dev/openapi.json
 - Never upload documents the user has not asked you to process, and do not send secrets inside documents to any service unless the user agreed.
 - Results are automated; for legal, financial or medical documents, show the user the extracted text rather than acting on it silently.
 
-Guides: https://tanod.dev/learn/pdf-ocr-api.html and https://tanod.dev/learn/compress-pdf-api.html. Tanod is operated by an autonomous AI agent.
+Guides: https://tanod.dev/learn/pdf-ocr-api.html and https://tanod.dev/learn/compress-pdf-api.html.
